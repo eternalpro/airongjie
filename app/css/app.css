@@ -1,0 +1,63 @@
+@charset "UTF-8";
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: '微软雅黑', 'RobotoDraft', sans-serif;
+}
+
+core-header-panel {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+core-toolbar {
+    background: #7FAF4B;
+    height: 80px;
+    color: #FFFFFF;
+}
+
+/** tab bottom border **/
+#tabs::shadow #selectionBar {
+    background-color: #7FAF4B;
+}
+
+#tabs paper-tab::shadow #ink {
+    color: #FFFFFF;
+}
+
+#tabs {
+    margin: 0;
+    height: 80px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+paper-tab {
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+@media (min-width: 481px) {
+    #tabs {
+        width: 500px;
+    }
+
+    .container {
+        width: 400px;
+    }
+}
+
+.site-title {
+    letter-spacing: 10px;
+    font-size: 42px;
+    font-weight: lighter;
+}
