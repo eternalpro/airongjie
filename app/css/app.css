@@ -10,3 +10,48 @@ html, body {
 ul.nav>li.active {
     border-bottom: 3px solid #ffffff;
 }
+
+.panel-title {
+    font-size: 16px;
+}
+
+.label-circle {
+    border-radius: 50%;
+}
+
+/** 圆形进度 **/
+
+.circle {
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.circle canvas {
+    vertical-align: top;
+}
+
+.circle strong {
+    font-weight: lighter;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+}
+
+.circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.panel {
+    border: 1px solid #4CAF50;
+    border-radius: 2px;
+    box-shadow: 0 0;
+}
