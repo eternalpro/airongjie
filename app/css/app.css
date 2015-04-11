@@ -55,3 +55,19 @@ ul.nav>li.active {
     border-radius: 2px;
     box-shadow: 0 0;
 }
+
+.btn.btn-fab.btn-fab-mini {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.footer {
+    background: #4CAF50;
+    height: 60px;
+}
+.footer-desc {
+    color: #ffffff;
+    margin-top: 20px;
+}
