@@ -2,8 +2,9 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-size: 14px;
     background-color: #E5E5E5;
-    font-family: '微软雅黑', 'RobotoDraft', sans-serif;
+    font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
 }
 
 core-header-panel {
@@ -14,7 +15,7 @@ core-header-panel {
 
 core-toolbar {
     background: #7FAF4B;
-    height: 80px;
+    height: 70px;
     color: #FFFFFF;
 }
 
@@ -23,13 +24,13 @@ core-toolbar {
     background-color: #7FAF4B;
 }
 
-#tabs paper-tab::shadow #ink {
+paper-tab::shadow #ink {
     color: #FFFFFF;
 }
 
 #tabs {
     margin: 0;
-    height: 80px;
+    height: 73px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -39,6 +40,7 @@ core-toolbar {
 
 paper-tab {
     font-size: 18px;
+    letter-spacing: 3px;
 }
 
 .container {
@@ -58,6 +60,6 @@ paper-tab {
 
 .site-title {
     letter-spacing: 10px;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: lighter;
 }
