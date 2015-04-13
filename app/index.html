@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link href="../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slicebox.css"/>
+    <link rel="stylesheet" href="css/slicebox.custom.css"/>
     <link rel="stylesheet" href="css/app.css"/>
+
+    <script src="js/modernizr.custom.46884.js"></script>
 </head>
 <body>
 
@@ -34,9 +38,35 @@
     </div>
 </div>
 
-<div class="jumbotron shadow-z-0">
-    <h1>这里是图</h1>
+<ul id="sb-slider" class="sb-slider">
+    <li>
+        <a href="#" target="_blank"><img src="images/1.jpg" alt="image1"/></a>
+    </li>
+    <li>
+        <a href="#" target="_blank"><img src="images/2.jpg" alt="image2"/></a>
+    </li>
+    <li>
+        <a href="#" target="_blank"><img src="images/3.jpg" alt="image1"/></a>
+    </li>
+    <li>
+        <a href="#" target="_blank"><img src="images/4.jpg" alt="image1"/></a>
+    </li>
+    <li>
+        <a href="#" target="_blank"><img src="images/5.jpg" alt="image1"/></a>
+    </li>
+</ul>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="nav-arrows" class="nav-arrows">
+                <a href="#">Next</a>
+                <a href="#">Previous</a>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <div class="container">
     <div class="row">
@@ -309,39 +339,8 @@
                             告诉小伙伴：
                         </h3>
 
-                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博"
-                                                                                                          href="#"
-                                                                                                          class="bds_tsina"
-                                                                                                          data-cmd="tsina"></a><a
-                                title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到QQ好友" href="#"
-                                                                                                    class="bds_sqq"
-                                                                                                    data-cmd="sqq"></a><a
-                                title="分享到百度新首页" href="#" class="bds_bdhome" data-cmd="bdhome"></a><a title="分享到微信" href="#"
-                                                                                                      class="bds_weixin"
-                                                                                                      data-cmd="weixin"></a>
-                        </div>
-                        <script>window._bd_share_config = {
-                            "common": {
-                                "bdSnsKey": {},
-                                "bdText": "",
-                                "bdMini": "2",
-                                "bdMiniList": false,
-                                "bdPic": "",
-                                "bdStyle": "1",
-                                "bdSize": "32"
-                            },
-                            "share": {},
-                            "image": {
-                                "viewList": ["tsina", "renren", "sqq", "bdhome", "weixin"],
-                                "viewText": "分享到：",
-                                "viewSize": "16"
-                            },
-                            "selectShare": {
-                                "bdContainerClass": null,
-                                "bdSelectMiniList": ["tsina", "renren", "sqq", "bdhome", "weixin"]
-                            }
-                        };
-                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
                     </div>
 
                     <div class="col-md-4">
@@ -387,6 +386,8 @@
 <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 
 <script src="js/circle-progress.js"></script>
+<script src="js/jquery.slicebox.js"></script>
+<script src="js/app.js"></script>
 <script>
     $.material.init();
 </script>
