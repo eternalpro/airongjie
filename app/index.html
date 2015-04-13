@@ -15,7 +15,27 @@
     <script src="js/modernizr.custom.46884.js"></script>
 </head>
 <body>
+<div style="height: 30px;background: #333333">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pull-left" style="margin-top: 5px;">
+                    <p class="text-success">
+                        联系电话：010-1234567
+                    </p>
+                </div>
 
+                <div class="pull-right" style="margin-top: 5px;">
+                    <p class="text-success">
+                        <a href="#">登录</a>
+                        |
+                        <a href="#">注册</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="navbar navbar-success shadow-z-1">
     <div class="container">
         <div class="navbar-header">
@@ -60,8 +80,8 @@
     <div class="row">
         <div class="col-md-12">
             <div id="nav-arrows" class="nav-arrows">
-                <a href="#">Next</a>
-                <a href="#">Previous</a>
+                <a id="next" href="#">Next</a>
+                <a id="previous" href="#">Previous</a>
             </div>
         </div>
     </div>
@@ -339,8 +359,31 @@
                             告诉小伙伴：
                         </h3>
 
-                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-                        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#"
+                                                                                                          class="bds_tsina"
+                                                                                                          data-cmd="tsina"
+                                                                                                          title="分享到新浪微博"></a><a
+                                href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a><a href="#"
+                                                                                                      class="bds_sqq"
+                                                                                                      data-cmd="sqq"
+                                                                                                      title="分享到QQ好友"></a><a
+                                href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#"
+                                                                                                    class="bds_weixin"
+                                                                                                    data-cmd="weixin"
+                                                                                                    title="分享到微信"></a>
+                        </div>
+                        <script>window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "1",
+                                "bdSize": "32"
+                            }, "share": {}
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
                     </div>
 
                     <div class="col-md-4">
@@ -414,25 +457,9 @@
         cp($('#circle4'), 0.75, 35, 75);
         cp($('#circle5'), 0.75, 35, 75);
 
-
-        /*$(".shor").noUiSlider({
-         start: 40,
-         connect: "lower",
-         range: {
-         min: 0,
-         max: 100
-         }
-         });
-
-         $(".svert").noUiSlider({
-         orientation: "vertical",
-         start: 40,
-         connect: "lower",
-         range: {
-         min: 0,
-         max: 100
-         }
-         });*/
+        setInterval(function () {
+            $('a#next').click();
+        }, 4000);
     });
 </script>
 
