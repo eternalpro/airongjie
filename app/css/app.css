@@ -2,13 +2,19 @@
 html, body {
     height: 100%;
     margin: 0;
+    color: #666666;
     font-size: 14px;
     background-color: #FFFFFF;
     font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
 }
 
 ul.nav>li.active {
-    border-bottom: 3px solid #ffffff;
+    color: #DE8C24;
+    border-bottom: 2px solid #DE8C24;
+}
+
+.border-bottom {
+    border-bottom: 4px solid #666666;
 }
 
 .panel-title {
@@ -51,11 +57,25 @@ ul.nav>li.active {
 }
 
 .panel {
-    border: 1px solid #4CAF50;
     border-radius: 2px;
     box-shadow: 0 0;
 }
 
+.panel>.panel-heading, .panel-default>.panel-heading{
+    background-color: #ffffff;
+
+}
+.panel-default>.panel-heading, .panel:not([class*=panel-])>.panel-heading {
+    color: #DE8C24;
+}
+
+th {
+    color: #DE8C24;
+}
+
+table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 15px 8px 8px 8px;
+}
 .btn.btn-fab.btn-fab-mini {
     width: 35px;
     height: 35px;
@@ -70,4 +90,86 @@ ul.nav>li.active {
 .footer-desc {
     color: #ffffff;
     margin-top: 20px;
+}
+.top-banner {
+    height: 40px;
+    background: #666666;
+}
+
+.font-color {
+    color: #DE8C24;
+}
+
+a {
+    color: #DE8C24;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo {
+    background: url("../images/logo.png") no-repeat;
+    background-size: 180px 80px;
+}
+.navbar {
+    height: 110px;
+    padding-top: 10px;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(102,102,102,1);
+    box-shadow: 0px 6px 5px 0px rgba(102,102,102,1);
+}
+.navbar.navbar, .navbar-default.navbar {
+    background-color: #ffffff;
+    color: #000000;
+}
+.navbar .navbar-brand {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    line-height: 30px;
+    color: inherit;
+}
+.navbar .navbar-nav>li>a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #666666;
+    margin-top: 15px;
+    font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB";
+
+}
+
+.navbar .navbar-nav>li>a:hover {
+    color: #DE8C24;
+    border-bottom: 2px solid #DE8C24;
+}
+
+.bg-panel-title {
+    height: 50px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-top: 5px;
+    font-size: 18px;
+    width: 200px;
+    border-bottom: 3px solid #DE8C24;
+}
+
+.bg-tz {
+    background-image: url("../images/tz.png");
+}
+.bg-rz {
+    background-image: url("../images/rz.png");
+}
+.bg-bx {
+    background-image: url("../images/bx.png");
+}
+.label {
+    padding: .4em .7em .4em;
+    font-size: 14px;
+    font-weight: normal;
+}
+.label-warning {
+    background: #DE8C24;
 }
