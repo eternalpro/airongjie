@@ -173,3 +173,27 @@ a:hover {
 .label-warning {
     background: #DE8C24;
 }
+
+.panel-product {
+    background: url("../images/xfg.png") no-repeat;
+    background-size: 102% 130px ;
+    height: 180px;
+
+}
+
+.panel-product .product-header {
+    font-size: 24px;
+    margin-left: 50px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.panel-product .product-header >small {
+    font-size: 16px;
+    margin-left: 20px;
+}
+.panel-product .product-desc {
+    color: #ffffff;
+    margin-left: 50px;
+}
