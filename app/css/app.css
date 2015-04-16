@@ -149,7 +149,6 @@ a:hover {
 }
 
 .navbar .navbar-nav>li>a:hover {
-    border-bottom: 4px solid #FF9900;
     color: #FF9900;
 }
 
