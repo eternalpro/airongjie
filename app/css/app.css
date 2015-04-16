@@ -141,7 +141,7 @@ a:hover {
 }
 .navbar .navbar-nav>li>a{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: normal;
     color: #666666;
     margin-top: 15px;
     font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB";
@@ -240,7 +240,15 @@ i.more-down {
     height: 16px;
     width: 16px;
 }
-
+i.call{
+    background:url("../images/tel.png") no-repeat;
+    background-size: 16px 16px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+}
 button.btn-more {
     border: 2px solid #FF9900;
     padding: 5px 70px;
@@ -261,3 +269,4 @@ div.news {
     background-size: 16px 16px;
     padding-left: 20px;
 }
+
