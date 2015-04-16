@@ -180,6 +180,7 @@ a:hover {
 }
 
 .panel-product {
+    margin-top: -3px;
     background: url("../images/rjbxf.png") no-repeat;
     background-size: 100% 200px ;
     height: 250px;
@@ -205,10 +206,10 @@ a:hover {
 .panel-product .percent {
     float: right;
     margin-right: 30px;
-    padding-right: 25px;
+    padding-right: 43px;
     background: url("../images/percent.png") no-repeat right;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-size: 23px 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 43px 68px;
     color: #FF9900;
     font-size: 100px;
 }
