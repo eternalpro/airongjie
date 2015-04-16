@@ -1,0 +1,263 @@
+@charset "UTF-8";
+html, body {
+    height: 100%;
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
+}
+
+h1,h2, h3, h4, h5{
+    font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
+}
+.bg-warning{
+    background: #FF9900;
+}
+
+ul.nav>li.active {
+    color: #FF9900;
+    border-bottom: 4px solid #FF9900;
+}
+
+.border-bottom {
+    border-bottom: 4px solid #666666;
+
+}
+
+.panel-title {
+    font-size: 16px;
+}
+
+.label-circle {
+    border-radius: 50%;
+}
+
+/** 圆形进度 **/
+
+.circle {
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.circle canvas {
+    vertical-align: top;
+}
+
+.circle strong {
+    font-weight: lighter;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+}
+
+.circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.panel {
+    border-radius: 2px;
+    box-shadow: 0 0;
+}
+
+.panel>.panel-heading, .panel-default>.panel-heading{
+    background-color: #ffffff;
+
+}
+.panel-default>.panel-heading, .panel:not([class*=panel-])>.panel-heading {
+    color: #FF9900;
+}
+
+th {
+    color: #FF9900;
+}
+
+table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 15px 8px 8px 8px;
+}
+.btn.btn-fab.btn-fab-mini {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.footer {
+    background: #666666;
+    height: 60px;
+}
+.footer-desc {
+    color: #FF9900;
+    margin-top: 20px;
+}
+.top-banner {
+    height: 40px;
+    background: #666666;
+}
+
+.font-color {
+    color: #FF9900;
+}
+
+a {
+    color: #FF9900;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo {
+    background: url("../images/logo.png") no-repeat;
+    background-size: 180px 80px;
+}
+.navbar {
+    height: 110px;
+    padding-top: 10px;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(102,102,102,1);
+    box-shadow: 0px 6px 5px 0px rgba(102,102,102,1);
+}
+.navbar.navbar, .navbar-default.navbar {
+    background-color: #ffffff;
+    color: #000000;
+}
+.navbar .navbar-brand {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    line-height: 30px;
+    color: inherit;
+}
+.navbar .navbar-nav>li>a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #666666;
+    margin-top: 15px;
+    font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB";
+
+}
+
+.navbar .navbar-nav>li>a:hover {
+    border-bottom: 4px solid #FF9900;
+    color: #FF9900;
+}
+
+.bg-panel-title {
+    height: 50px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-top: 5px;
+    font-size: 18px;
+    width: 200px;
+    border-bottom: 3px solid #FF9900;
+}
+
+.bg-tz {
+    background-image: url("../images/tz.png");
+}
+.bg-rz {
+    background-image: url("../images/rz.png");
+}
+.bg-bx {
+    background-image: url("../images/bx.png");
+}
+.label {
+    padding: .4em .7em .4em;
+    font-size: 14px;
+    font-weight: normal;
+}
+.label-warning {
+    background: #FF9900;
+}
+
+.panel-product {
+    margin-top: -3px;
+    background: url("../images/rjbxf.png") no-repeat;
+    background-size: 100% 200px ;
+    height: 250px;
+}
+
+.panel-product .product-header {
+    font-size: 24px;
+    margin-left: 50px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.panel-product .product-header >small {
+    font-size: 16px;
+    margin-left: 20px;
+}
+.panel-product .product-desc {
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+.panel-product .percent {
+    float: right;
+    margin-right: 30px;
+    padding-right: 43px;
+    background: url("../images/percent.png") no-repeat right;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 43px 68px;
+    color: #FF9900;
+    font-size: 100px;
+}
+
+button.product-btn {
+    background: #ffffff;
+    border: 2px solid #FF9900;
+    padding: 5px 20px;
+    color: #FF9900;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+button.product-btn:hover {
+    background: #FF9900;
+    color: #ffffff;
+}
+
+i.more-down {
+    background:url("../images/more.png") no-repeat;
+    background-size: 16px 16px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+}
+
+button.btn-more {
+    border: 2px solid #FF9900;
+    padding: 5px 70px;
+    color: #FF9900;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 0px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.text-warning {
+    color: #FF9900;
+}
+
+div.news {
+    margin: 0 20px;
+    background: url("../images/r.png") no-repeat;
+    background-size: 16px 16px;
+    padding-left: 20px;
+}
