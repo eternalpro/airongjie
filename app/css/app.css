@@ -16,6 +16,7 @@ h1,h2, h3, h4, h5{
 }
 
 ul.nav>li.active {
+    height: 75px;
     color: #FF9900;
     border-bottom: 4px solid #FF9900;
 }
@@ -149,7 +150,6 @@ a:hover {
 }
 
 .navbar .navbar-nav>li>a:hover {
-    border-bottom: 4px solid #FF9900;
     color: #FF9900;
 }
 
