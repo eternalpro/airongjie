@@ -8,13 +8,18 @@ html, body {
     font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
 }
 
+.bg-warning{
+    background: #DE8C24;
+}
+
 ul.nav>li.active {
     color: #DE8C24;
-    border-bottom: 2px solid #DE8C24;
+    border-bottom: 4px solid #DE8C24;
 }
 
 .border-bottom {
     border-bottom: 4px solid #666666;
+
 }
 
 .panel-title {
@@ -84,11 +89,11 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
 }
 
 .footer {
-    background: #4CAF50;
+    background: #666666;
     height: 60px;
 }
 .footer-desc {
-    color: #ffffff;
+    color: #DE8C24;
     margin-top: 20px;
 }
 .top-banner {
@@ -141,8 +146,8 @@ a:hover {
 }
 
 .navbar .navbar-nav>li>a:hover {
+    border-bottom: 4px solid #DE8C24;
     color: #DE8C24;
-    border-bottom: 2px solid #DE8C24;
 }
 
 .bg-panel-title {
@@ -175,10 +180,9 @@ a:hover {
 }
 
 .panel-product {
-    background: url("../images/xfg.png") no-repeat;
-    background-size: 102% 130px ;
-    height: 180px;
-
+    background: url("../images/rjbxf.png") no-repeat;
+    background-size: 100% 200px ;
+    height: 250px;
 }
 
 .panel-product .product-header {
@@ -196,4 +200,29 @@ a:hover {
 .panel-product .product-desc {
     color: #ffffff;
     margin-left: 50px;
+}
+
+.panel-product .percent {
+    float: right;
+    margin-right: 30px;
+    padding-right: 25px;
+    background: url("../images/percent.png") no-repeat right;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-size: 23px 36px;
+    color: #FF9900;
+    font-size: 100px;
+}
+
+button.product-btn {
+    background: #ffffff;
+    border: 2px solid #DE8C24;
+    padding: 5px 20px;
+    color: #DE8C24;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+button.product-btn:hover {
+    background: #DE8C24;
+    color: #ffffff;
 }

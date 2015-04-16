@@ -10,6 +10,7 @@
     <link href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/slicebox.css"/>
     <link rel="stylesheet" href="css/slicebox.custom.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
     <link rel="stylesheet" href="css/core.css"/>
     <link rel="stylesheet" href="css/app.css"/>
     <script src="js/modernizr.custom.46884.js"></script>
@@ -49,10 +50,10 @@
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="javascript:void(0)">首页</a></li>
-                <li><a href="javascript:void(0)">融资理财</a></li>
-                <li><a href="javascript:void(0)">安全保障</a></li>
-                <li><a href="javascript:void(0)">关于我们</a></li>
+                <li class="active "><a href="javascript:void(0)">首页</a></li>
+                <li class="hvr-wobble-horizontal"><a href="javascript:void(0)">我要理财</a></li>
+                <li class="hvr-wobble-horizontal"><a href="javascript:void(0)">我要借款</a></li>
+                <li class="hvr-wobble-horizontal"><a href="javascript:void(0)">关于我们</a></li>
             </ul>
         </div>
     </div>
@@ -256,8 +257,12 @@
             <div class="panel">
                 <div class="panel-body">
                     <div class="panel-product">
-                        <div class="product-header">融界宝 <small>计划A</small></div>
+                        <div class="product-header">融界宝
+                            <small>计划A</small>
+                        </div>
                         <div class="product-desc">锁定期6个月</div>
+                        <button class="product-btn hvr-radial-out">查看详情</button>
+                        <div class="percent">8</div>
                     </div>
                 </div>
             </div>
@@ -266,8 +271,12 @@
             <div class="panel">
                 <div class="panel-body">
                     <div class="panel-product">
-                        <div class="product-header">融界宝 <small>计划B</small></div>
+                        <div class="product-header">融界宝
+                            <small>计划B</small>
+                        </div>
                         <div class="product-desc">锁定期12个月</div>
+                        <button class="product-btn hvr-radial-out">查看详情</button>
+                        <div class="percent">12</div>
                     </div>
                 </div>
             </div>
@@ -276,8 +285,12 @@
             <div class="panel">
                 <div class="panel-body">
                     <div class="panel-product">
-                        <div class="product-header">融界宝 <small>计划C</small></div>
+                        <div class="product-header">融界宝
+                            <small>计划C</small>
+                        </div>
                         <div class="product-desc">锁定期24个月</div>
+                        <button class="product-btn hvr-radial-out">查看详情</button>
+                        <div class="percent">15</div>
                     </div>
                 </div>
             </div>
@@ -363,15 +376,15 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-success">
-                <div class="panel-body">
-                    <div class="col-md-8">
-                        <h3 class="pull-left">
-                            告诉小伙伴：
-                        </h3>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-desc">
+                    <h4 class="pull-left">
+                        分享链接：
+                    </h4>
+                    <div class="pull-left">
 
                         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#"
                                                                                                           class="bds_tsina"
@@ -394,41 +407,15 @@
                                 "bdMiniList": false,
                                 "bdPic": "",
                                 "bdStyle": "1",
-                                "bdSize": "32"
+                                "bdSize": "24"
                             }, "share": {}
                         };
                         with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
-                    </div>
 
-                    <div class="col-md-4">
-                        <div class="pull-right">
-                            邮件订阅：
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-success btn-sm" type="button">提交</button>
-                            </span>
-                            </div>
-                        </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-desc">
-                    <div class="pull-left">
-                        Design by Eternal
-                    </div>
-                    <div class="pull-right">
-                        &copy; 2015 爱融界
-                    </div>
+                    <h4 class="pull-right">
+                        客服电话：400-811-XXXX
+                    </h4>
                 </div>
             </div>
         </div>
