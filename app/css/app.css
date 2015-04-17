@@ -96,6 +96,10 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
     background: #666666;
     height: 60px;
 }
+
+.footer h4{
+    font-weight: 400;
+}
 .footer-desc {
     color: #FF9900;
     margin-top: 20px;
