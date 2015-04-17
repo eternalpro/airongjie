@@ -309,3 +309,38 @@ div.news {
     padding-left: 20px;
 }
 
+ul.slide-left {
+    padding: 0px;
+    width: 220px;
+    float: left;
+    margin-left: -10px;
+    font-size: 16px;
+    -webkit-box-shadow: 9px 9px 13px -5px rgba(102,102,102,1);
+    -moz-box-shadow: 9px 9px 13px -5px rgba(102,102,102,1);
+    box-shadow: 9px 9px 13px -5px rgba(102,102,102,1);
+    background: #FF9900;
+    color: #ffffff;
+
+}
+ul.slide-left li{
+    width: 100%;
+    padding: 20px 0px;
+    list-style: none;
+}
+
+ul.slide-left a {
+    font-weight: 400;
+    color: #ffffff;
+    padding: 15px 78px;
+}
+
+ul.slide-left a:hover {
+    background: #ffffff;
+    color: #FF9900;
+}
+
+ul.slide-left a.active {
+    background: #ffffff;
+    color: #FF9900;
+}
+
