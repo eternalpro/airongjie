@@ -118,6 +118,14 @@ a:hover {
     text-decoration: none;
 }
 
+td>a {
+    color: #666666;
+}
+
+td>a:hover {
+    color: #FF9900;
+    text-decoration: none;
+}
 .logo {
     background: url("../images/logo.png") no-repeat;
     background-size: 180px 80px;
@@ -161,7 +169,24 @@ a:hover {
     padding-top: 5px;
     font-size: 18px;
     width: 200px;
+
     border-bottom: 3px solid #FF9900;
+}
+
+.panel-desc {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+
+.panel-desc:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -webkit-transition: -webkit-filter 0.4s linear;
+    -moz-transition: -moz-filter 0.4s linear;
+    -o-transition: -o-filter 0.4s linear;
 }
 
 .bg-tz {
@@ -259,6 +284,11 @@ button.btn-more {
     border-top: 0px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
+
+.table>thead>tr>th{
+    color: #666;
+}
+
 .text-warning {
     color: #FF9900;
 }
