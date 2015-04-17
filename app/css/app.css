@@ -118,11 +118,11 @@ a:hover {
     text-decoration: none;
 }
 
-td>a {
+td a {
     color: #666666;
 }
 
-td>a:hover {
+td a:hover {
     color: #FF9900;
     text-decoration: none;
 }
