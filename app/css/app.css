@@ -180,13 +180,22 @@ td>a:hover {
     -o-filter: grayscale(1);
 }
 
+.grey-desc {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+
 .panel-desc:hover {
+    filter: grayscale(0);
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     -o-filter: grayscale(0);
     -webkit-transition: -webkit-filter 0.4s linear;
     -moz-transition: -moz-filter 0.4s linear;
     -o-transition: -o-filter 0.4s linear;
+    transition: filter 0.4s linear;
 }
 
 .bg-tz {
