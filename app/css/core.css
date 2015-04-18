@@ -1,9 +1,25 @@
 .margin10-t {
     margin-top: 10px;
 }
+
+.margin20-t {
+    margin-top: 20px;
+}
+
 .margin20-b {
     margin-bottom: 20px;
 }
 .margin40-b {
     margin-bottom: 40px;
 }
+.padding20-t {
+    padding-top: 20px;
+}
+.padding30-t {
+    padding-top: 30px;
+}
+
+.padding30-b {
+    padding-bottom: 30px;
+}
+
