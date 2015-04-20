@@ -12,6 +12,12 @@
 .margin40-b {
     margin-bottom: 40px;
 }
+
+.margin50-t {
+    margin-top: 50px;
+}
+
+
 .padding20-t {
     padding-top: 20px;
 }
@@ -22,4 +28,3 @@
 .padding30-b {
     padding-bottom: 30px;
 }
-

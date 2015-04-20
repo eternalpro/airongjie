@@ -442,3 +442,7 @@ div.step-one {
 .text-default {
     color: #666666;
 }
+
+form.form-custom>div.form-group {
+    margin-top: 40px;
+}
