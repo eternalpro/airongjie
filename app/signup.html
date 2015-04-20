@@ -106,11 +106,13 @@
                             <div class="form-group  has-custom">
                                 <label class="col-sm-3 control-label">手机号码</label>
 
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="col-sm-4">
-                                    <button type="button" class="btn btn-custom btn-sm" id="receiveCode">获取验证码</button>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-custom btn-xs" id="receiveCode">获取验证码</button>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -133,25 +135,40 @@
                             <div class="form-group  has-custom">
                                 <label class="col-sm-3 control-label">选择角色</label>
 
-                                <div class="col-sm-8">
-                                    <a href="javascript:void(0)"
-                                       class="btn btn-warning btn-flat btn-sm btn-choose"><span class="text-warning">我要理财</span></a>
-                                    <a href="javascript:void(0)"
-                                       class="btn btn-warning btn-flat btn-sm btn-choose"><span class="text-default">我要借款</span></a>
+                                <div class="col-sm-3">
+                                    <div class="radio radio-primary">
+                                        <label class="text-warning">
+                                            <input type="radio" name="sample2" value="option1" checked><span class="circle"></span>
+                                            <span class="check"></span>
+                                            我要理财
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="radio radio-primary">
+                                        <label>
+                                            <input type="radio" name="sample2" value="option2" ><span class="circle"></span>
+                                            我要借款
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="form-group  has-custom">
-                                <label class="col-sm-3 control-label">验证码</label>
 
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="col-sm-3">
-                                    <span class="label label-default">12345</span>
-                                    <button type="button" class="btn btn-primary btn-xs btn-flat" style="padding: 0">
-                                        <i class="mdi-navigation-refresh text-warning"></i>
-                                    </button>
+                                <div class="input-group">
+                                    <label class="col-sm-3 control-label">验证码</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <span class="label label-default">12345</span>
+                                                <button type="button" class="btn btn-primary btn-xs btn-flat" style="padding: 0">
+                                                    <i class="mdi-navigation-refresh text-warning"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -172,7 +189,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-3">已有账户？<a href="#" class="a-main">立即登录</a></div>
+                    <div class="col-md-3">已有账户？&nbsp;&nbsp;&nbsp;<a href="#" class="a-main">立即登录</a></div>
                     <div class="col-md-1"></div>
                 </div>
             </div>
@@ -241,11 +258,10 @@
 <script>
     $(function () {
         $.material.init();
-        $('a.btn-choose').on('click', function (e) {
-            e.preventDefault();
+        $('input[type=radio]').on('click', function (e) {
             var $this = $(this);
-            $('a.btn-choose').find('span').removeClass('text-warning').addClass('text-default');
-            $this.find('span').removeClass('text-default').addClass('text-warning');
+            $('input[type=radio]').parent('label').removeClass('text-warning').addClass('text-default');
+            $this.parent('label').removeClass('text-default').addClass('text-warning');
         });
 
         $('#receiveCode').on('click', function () {
