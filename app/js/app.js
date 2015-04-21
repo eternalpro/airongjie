@@ -39,3 +39,5 @@ var Page = (function () {
 })();
 
 Page.init();
+var height = $(document).height();
+$('div.bg-white').css('min-height', height - 260);
