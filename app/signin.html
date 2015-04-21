@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>注册 - 爱融界</title>
+    <title>登录 - 爱融界</title>
     <meta charset="utf-8">
     <!-- Mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,129 +67,45 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="border-shadow bg-white col-md-10" style="padding-top: 50px; padding-bottom: 30px;">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <ul class="signup-step">
-                            <li class="step">
-                                <div class="step step-one step-current">
-                                    爱
-                                </div>
-                                <div class="info text-warning">填写账户信息</div>
-                            </li>
-                            <li class="prog  step-current"></li>
-                            <li class="step">
-                                <div class="step"></div>
-                                <div class="info">手机验证通过</div>
-                            </li>
-                            <li class="prog"></li>
-                            <li class="step">
-                                <div class="step"></div>
-                                <div class="info">注册成功</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="row margin50-t">
-                    <div class="col-md-10">
-                        <div class="pull-right">
-                            已有账户？&nbsp;&nbsp;&nbsp;<a href="#" class="a-main">立即登录</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="row ">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-9">
+                    <div class="col-md-7">
+                        <img src="images/loginkey.png" alt=""/>
+                    </div>
+                    <div class="col-md-4">
                         <form class="form-horizontal form-custom" method="post">
                             <div class="form-group  has-custom">
-                                <label class="col-sm-3 control-label">昵称</label>
+                                <label class="col-sm-3 control-label">手机号</label>
 
-                                <div class="col-sm-5">
+                                <div class="col-sm-9">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-
                             <div class="form-group  has-custom">
-                                <label class="col-sm-3 control-label">手机号码</label>
+                                <label class="col-sm-3 control-label">密码</label>
 
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="col-sm-3">
-                                    <button type="button" style="margin-top: -12px;" class="btn btn-custom" id="receiveCode">获取验证码</button>
-                                </div>
-                            </div>
-
-                            <div class="form-group  has-custom">
-                                <label class="col-sm-3 control-label">登录密码</label>
-
-                                <div class="col-sm-5">
-                                    <input type="password" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="form-group  has-custom">
-                                <label class="col-sm-3 control-label">重复密码</label>
-
-                                <div class="col-sm-5">
-                                    <input type="password" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="form-group  has-custom">
-                                <label class="col-sm-3 control-label">选择角色</label>
-
-                                <div class="col-sm-3">
-                                    <div class="radio radio-primary">
-                                        <label class="text-warning">
-                                            <input type="radio" name="sample2" value="option1" checked><span class="circle"></span>
-                                            <span class="check"></span>
-                                            我要理财
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="radio radio-primary">
-                                        <label>
-                                            <input type="radio" name="sample2" value="option2" ><span class="circle"></span>
-                                            我要借款
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group  has-custom">
-                                <label class="col-sm-3 control-label">验证码</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="col-md-2"  style="margin-top: -12px">
-                                    <span class="label label-default">12345</span>
-                                    <button type="button" class="btn btn-primary btn-xs btn-flat" style="padding: 0">
-                                        <i class="mdi-navigation-refresh text-warning"></i>
-                                    </button>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="password">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-8">
+                                <div class="col-sm-offset-1 col-sm-10">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox"> 已阅读并同意
-                                            <a href="#" class="text-info">《爱融界网站服务协议》</a>
+                                            <input type="checkbox" id="randomKey"> 使用随机密码
+                                            <a href="#" style="margin-left: 50px;" class="text-info">忘记密码</a>
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-8">
-                                    <button type="submit" class="btn btn-default btn-custom">立即注册</button>
+                                <div class="col-sm-offset-3 col-sm-9">
+                                    <button type="submit" class="btn btn-default btn-custom" id="loginBtn">登 录
+                                    </button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-1"></div>
                     <div class="col-md-1"></div>
                 </div>
             </div>
@@ -258,26 +174,33 @@
 <script>
     $(function () {
         $.material.init();
-        $('input[type=radio]').on('click', function (e) {
+        var $loginBtn = $('#loginBtn');
+
+        $('#randomKey').on('click', function () {
             var $this = $(this);
-            $('input[type=radio]').parent('label').removeClass('text-warning').addClass('text-default');
-            $this.parent('label').removeClass('text-default').addClass('text-warning');
+            if ($this.get(0).checked) {
+                $loginBtn.text('获取随机密码');
+            } else {
+                $loginBtn.text('登 录')
+            }
         });
 
-        $('#receiveCode').on('click', function () {
-            var $this = $(this);
-            var i=60;
-            var itl = setInterval(function(){
-                if(i==0) {
-                    $('#receiveCode').removeClass('disabled');
-                    $('#receiveCode').text('获取验证码');
-                    clearInterval(itl);
-                    return;
-                }
-                $this.addClass('disabled');
-                $this.text(i + ' 秒后重试');
-                i--;
-            }, 1000);
+        /**
+         * 清除计时器
+         */
+        var clearITL = function(){
+            $loginBtn.removeClass('disabled');
+            $loginBtn.text('获取随机密码');
+            clearInterval(itl);
+        };
+
+        $loginBtn.on('click', function (e) {
+            if ($('#randomKey').get(0).checked) {
+                e.preventDefault();
+                location.href="randomLogin.html"
+            }else{
+
+            }
         });
     });
 </script>
