@@ -5,13 +5,14 @@ html, body {
     color: #666666;
     font-size: 14px;
     background-color: #FFFFFF;
-    font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
+    font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB";
 }
 
-h1,h2, h3, h4, h5{
-    font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
+h1, h2, h3, h4, h5 {
+    font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB";
 }
-.bg-warning{
+
+.bg-warning {
     background: #FF9900;
 }
 
@@ -24,12 +25,12 @@ h1,h2, h3, h4, h5{
 }
 
 .border-shadow {
-    -webkit-box-shadow: 0px 0px 11px 0px rgba(145,139,145,1);
-    -moz-box-shadow: 0px 0px 11px 0px rgba(145,139,145,1);
-    box-shadow: 0px 0px 11px 0px rgba(145,139,145,1);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(145, 139, 145, 1);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(145, 139, 145, 1);
+    box-shadow: 0px 0px 11px 0px rgba(145, 139, 145, 1);
 }
 
-ul.nav>li.active {
+ul.nav > li.active {
     height: 75px;
     color: #FF9900;
     border-bottom: 4px solid #FF9900;
@@ -84,11 +85,12 @@ ul.nav>li.active {
     box-shadow: 0 0;
 }
 
-.panel>.panel-heading, .panel-default>.panel-heading{
+.panel > .panel-heading, .panel-default > .panel-heading {
     background-color: #ffffff;
 
 }
-.panel-default>.panel-heading, .panel:not([class*=panel-])>.panel-heading {
+
+.panel-default > .panel-heading, .panel:not([class*=panel-]) > .panel-heading {
     color: #FF9900;
 }
 
@@ -99,6 +101,7 @@ th {
 table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     padding: 15px 8px 8px 8px;
 }
+
 .btn.btn-fab.btn-fab-mini {
     width: 35px;
     height: 35px;
@@ -111,13 +114,15 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
     height: 60px;
 }
 
-.footer h4{
+.footer h4 {
     font-weight: 400;
 }
+
 .footer-desc {
     color: #FF9900;
     margin-top: 20px;
 }
+
 .top-banner {
     height: 40px;
     background: #666666;
@@ -131,6 +136,7 @@ a {
     color: #FF9900;
     text-decoration: none;
 }
+
 a:hover {
     color: #ffffff;
     text-decoration: none;
@@ -144,21 +150,25 @@ td a:hover {
     color: #FF9900;
     text-decoration: none;
 }
+
 .logo {
     background: url("../images/logo.png") no-repeat;
     background-size: 180px 80px;
 }
+
 .navbar {
     height: 110px;
     padding-top: 10px;
-    -webkit-box-shadow: 0px 3px 4px 1px rgba(102,102,102,0.43);
-    -moz-box-shadow: 0px 3px 4px 1px rgba(102,102,102,0.43);
-    box-shadow: 0px 3px 4px 1px rgba(102,102,102,0.43);
+    -webkit-box-shadow: 0px 3px 4px 1px rgba(102, 102, 102, 0.43);
+    -moz-box-shadow: 0px 3px 4px 1px rgba(102, 102, 102, 0.43);
+    box-shadow: 0px 3px 4px 1px rgba(102, 102, 102, 0.43);
 }
+
 .navbar.navbar, .navbar-default.navbar {
     background-color: #ffffff;
     color: #000000;
 }
+
 .navbar .navbar-brand {
     position: relative;
     height: 100px;
@@ -166,7 +176,8 @@ td a:hover {
     line-height: 30px;
     color: inherit;
 }
-.navbar .navbar-nav>li>a{
+
+.navbar .navbar-nav > li > a {
     font-size: 18px;
     font-weight: normal;
     color: #666666;
@@ -175,7 +186,7 @@ td a:hover {
 
 }
 
-.navbar .navbar-nav>li>a:hover {
+.navbar .navbar-nav > li > a:hover {
     color: #FF9900;
 }
 
@@ -212,26 +223,30 @@ td a:hover {
 
 .panel-desc:hover {
     -webkit-filter: none;
-    -moz-filter:none;
+    -moz-filter: none;
     -ms-filter: none;
-    -o-filter:none;
+    -o-filter: none;
     filter: none;
 }
 
 .bg-tz {
     background-image: url("../images/tz.png");
 }
+
 .bg-rz {
     background-image: url("../images/rz.png");
 }
+
 .bg-bx {
     background-image: url("../images/bx.png");
 }
+
 .label {
     padding: .4em .7em .4em;
     font-size: 14px;
     font-weight: normal;
 }
+
 .label-warning {
     background: #FF9900;
 }
@@ -239,7 +254,7 @@ td a:hover {
 .panel-product {
     margin-top: -3px;
     background: url("../images/rjbxf.png") no-repeat;
-    background-size: 100% 200px ;
+    background-size: 100% 200px;
     height: 250px;
 }
 
@@ -251,10 +266,11 @@ td a:hover {
     font-weight: bolder;
 }
 
-.panel-product .product-header >small {
+.panel-product .product-header > small {
     font-size: 16px;
     margin-left: 20px;
 }
+
 .panel-product .product-desc {
     color: #ffffff;
     margin-left: 50px;
@@ -286,7 +302,7 @@ button.product-btn:hover {
 }
 
 i.more-down {
-    background:url("../images/more.png") no-repeat;
+    background: url("../images/more.png") no-repeat;
     background-size: 16px 16px;
     float: left;
     margin-top: 3px;
@@ -294,8 +310,9 @@ i.more-down {
     height: 16px;
     width: 16px;
 }
-i.call{
-    background:url("../images/tel.png") no-repeat;
+
+i.call {
+    background: url("../images/tel.png") no-repeat;
     background-size: 16px 16px;
     float: left;
     margin-top: 0px;
@@ -303,6 +320,7 @@ i.call{
     height: 16px;
     width: 16px;
 }
+
 button.btn-more {
     border: 2px solid #FF9900;
     padding: 5px 70px;
@@ -314,7 +332,7 @@ button.btn-more {
     border-bottom: 1px solid #ddd;
 }
 
-.table>thead>tr>th{
+.table > thead > tr > th {
     color: #666;
 }
 
@@ -335,33 +353,43 @@ ul.slide-left {
     float: left;
     margin-left: -10px;
     font-size: 16px;
-    -webkit-box-shadow: 9px 9px 13px -5px rgba(102,102,102,1);
-    -moz-box-shadow: 9px 9px 13px -5px rgba(102,102,102,1);
-    box-shadow: 9px 9px 13px -5px rgba(102,102,102,1);
+    -webkit-box-shadow: 9px 9px 13px -5px rgba(102, 102, 102, 1);
+    -moz-box-shadow: 9px 9px 13px -5px rgba(102, 102, 102, 1);
+    box-shadow: 9px 9px 13px -5px rgba(102, 102, 102, 1);
     background: #FF9900;
     color: #ffffff;
 
 }
-ul.slide-left li{
+
+ul.slide-left li {
     width: 100%;
-    padding: 20px 0px;
+    margin: 15px 0px;
+    padding: 15px 0px;
     list-style: none;
 }
 
 ul.slide-left a {
+    margin-left: 65px;
     font-weight: 400;
     color: #ffffff;
-    padding: 15px 78px;
 }
 
-ul.slide-left a:hover {
+ul.slide-left li:hover {
     background: #ffffff;
-    color: #FF9900;
 }
 
-ul.slide-left a.active {
-    background: #ffffff;
+ul.slide-left li:hover > a {
     color: #FF9900;
+
+}
+
+ul.slide-left li.active {
+    background: #ffffff;
+}
+
+ul.slide-left li.active > a {
+    color: #FF9900;
+
 }
 
 .clear-nav {
@@ -371,27 +399,30 @@ ul.slide-left a.active {
 .a-main:hover {
     color: #666666;
 }
+
 ul.signup-step {
     width: 100%;
 }
+
 ul.signup-step li {
     list-style: none;
     float: left;
 }
 
-ul.signup-step>li.prog {
+ul.signup-step > li.prog {
     height: 25px;
     background: #E1DDDD;
     width: 33%;
     margin-left: -7px;
     margin-top: 26px;
 }
-ul.signup-step>li.step {
+
+ul.signup-step > li.step {
     margin-left: -4px;
 }
 
-ul.signup-step>li.step-current {
-    background-image:linear-gradient(to right, #FF9900 , #E1DDDD 65%);
+ul.signup-step > li.step-current {
+    background-image: linear-gradient(to right, #FF9900, #E1DDDD 65%);
 }
 
 div.step {
@@ -405,22 +436,26 @@ div.step {
     background: #E1DDDD;
     margin-bottom: 15px;
 }
+
 div.step-current {
     color: #ffffff;
     background: #FF9900;
 }
+
 div.step-one {
 }
 
 .form-group.has-custom .form-control {
     box-shadow: none;
 }
+
 .form-group.has-custom .material-input:focus,
 .form-group.has-custom .form-control:focus,
 .form-group.has-custom .form-control.focus {
     background-image: linear-gradient(#FF9900, #FF9900), linear-gradient(#d2d2d2, #d2d2d2);
     box-shadow: none;
 }
+
 .form-group.has-warning .control-label,
 .form-group.has-warning input.form-control:focus ~ .floating-label {
     color: #666666;
@@ -430,6 +465,7 @@ div.step-one {
     border: 1px solid #FF9900;
     color: #FF9900;
 }
+
 .btn-custom:hover {
     border: 1px solid #FF9900;
 }
@@ -443,6 +479,46 @@ div.step-one {
     color: #666666;
 }
 
-form.form-custom>div.form-group {
+form.form-custom > div.form-group {
     margin-top: 40px;
+}
+
+.panel-custom {
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+.panel-custom > .panel-heading {
+    background: #FF9900;
+    padding: 13px 15px;
+    color: #ffffff;
+}
+
+.panel-custom > .panel-body {
+    padding: 10px 15px;
+}
+
+.btn-custom-inverse {
+    border: 1px solid #FF9900;
+    background: #FF9900;
+    color: #ffffff;
+}
+
+.btn-custom-inverse:hover {
+    border: 1px solid #FF9900;
+    color: #FF9900;
+}
+
+.btn-custom-inverse:hover:not(.btn-link):not(.btn-flat){
+    background-color: rgba(249, 179, 77, 1);
+}
+
+.btn-custom-inverse:not(.btn-link):not(.btn-flat), .btn-custom-inverse:not(.btn-link):not(.btn-flat) {
+    background: #FF9900;
+    color: #ffffff;
+}
+
+span.strong {
+    font-size: 18px;
+    font-weight: 500;
 }
