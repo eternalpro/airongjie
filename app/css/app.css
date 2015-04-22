@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .bg-grey {
-    background: #E1DDDD;
+    background: #F2F2F2;
 }
 
 .bg-white {
@@ -132,7 +132,7 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
     color: #FF9900;
 }
 
-a {
+a, a:visited, a:hover {
     color: #FF9900;
     text-decoration: none;
 }
@@ -392,6 +392,31 @@ ul.slide-left li.active > a {
 
 }
 
+
+ul.child-nav > li{
+    margin: 5px 0px;
+    padding: 8px 0px;
+    font-size: 14px;
+}
+
+ul.child-nav li:hover {
+    background: #FFE1B3;
+}
+
+ul.child-nav li:hover > a {
+    color: #FF9900;
+
+}
+
+ul.child-nav li.active {
+    background: #FFE1B3;
+}
+
+ul.child-nav li.active > a {
+    color: #FF9900;
+
+}
+
 .clear-nav {
     margin-top: -13px;
 }
@@ -521,4 +546,55 @@ form.form-custom > div.form-group {
 span.strong {
     font-size: 18px;
     font-weight: 500;
+}
+
+.bordered {
+    border: 1px solid #dcdcdc;
+}
+
+.bordered-left {
+    border-left: 1px solid #dcdcdc;
+}
+
+.bordered-right {
+    border-right: 1px solid #dcdcdc;
+}
+
+.bordered-top {
+    border-top: 1px solid #dcdcdc;
+}
+
+.bordered-bottom {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.bg-dd {
+    background: #FFEBCC
+}
+
+ul.nav-tabs-custom {
+    height: 43px;
+    padding: 0px;
+    list-style: none;
+}
+.nav-tabs-custom > li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-bottom: -1px;
+    padding: 10px 30px 10px 30px;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}
+.nav-tabs-custom > li.active{
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    z-index: 9999;
+    padding-bottom: 11px;
 }
