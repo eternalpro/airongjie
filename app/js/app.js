@@ -49,3 +49,18 @@ $('a.slide-click').on('click', function(e){
     console.log(target);
     $('#'+target).slideToggle(400);
 });
+
+$('ul.nav-tabs-custom>li').on('click', function(){// tabs标签切换
+    var $this = $(this);
+    $this.addClass('active').siblings().removeClass('active');
+    var $target = $('#' + $this.data('target'));
+    $this.parent().siblings().hide();
+    $target.show();
+}).each(function(i, o){// 初始化标签内容
+    if($(o).hasClass('active')){
+        $('#' + $(o).data('target')).show();
+    }else{
+        $('#' + $(o).data('target')).hide();
+    }
+});
+

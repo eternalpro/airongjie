@@ -612,3 +612,10 @@ ul.nav-tabs-custom {
     margin-bottom: 0px;
 }
 
+.tabs-custom-content {
+    padding: 20px;
+    display: none;
+    background: #ffffff;
+    margin-top: -11px;
+    border: 1px solid #dddddd;
+}
