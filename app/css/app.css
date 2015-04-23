@@ -362,6 +362,7 @@ ul.slide-left {
 }
 
 ul.slide-left li {
+    cursor: pointer;
     width: 100%;
     margin: 15px 0px;
     padding: 15px 0px;

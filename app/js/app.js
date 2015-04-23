@@ -42,11 +42,10 @@ Page.init();
 var height = $(document).height();
 $('div.bg-white').css('min-height', height - 260);
 
-$('a.slide-click').on('click', function(e){
+$('a.slide-click').parent().on('click', function(e){
     e.preventDefault();
-    var $this = $(this);
+    var $this = $(this).find('a');
     var target = $this.data('target');
-    console.log(target);
     $('#'+target).slideToggle(400);
 });
 
