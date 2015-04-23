@@ -598,3 +598,17 @@ ul.nav-tabs-custom {
     z-index: 9999;
     padding-bottom: 11px;
 }
+
+.alert-custom {
+    background: #FFC266;
+    color: #000;
+}
+
+.alert-custom-2 {
+    background: #FFB74C;
+    color: #ffffff;
+}
+.alert {
+    margin-bottom: 0px;
+}
+
