@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+    <title>账户管理 - 个人中心 - 爱融界</title>
+    <meta charset="utf-8">
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link href="../../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="../../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/slicebox.css"/>
+    <link rel="stylesheet" href="../css/slicebox.custom.css"/>
+    <link rel="stylesheet" href="../css/hover.css"/>
+    <link rel="stylesheet" href="../css/core.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <script src="../js/modernizr.custom.46884.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="top-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 margin10-t">
+                <div class="pull-left">
+                    <p class="font-color" style="font-size: 16px; font-weight: 400">
+                        <i class="call"></i> 400-810-XXXX
+                    </p>
+                </div>
+
+                <div class="pull-right">
+                    <p class="font-color">
+                        <a href="../signin.html">登录</a>
+                        |
+                        <a href="../signup.html">注册</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="javascript:void(0)"></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hvr-underline-from-center "><a href="../index.html">首页</a></li>
+                <li class="hvr-underline-from-center"><a href="javascript:void(0)">我要理财</a></li>
+                <li class="hvr-underline-from-center"><a href="javascript:void(0)">我要借款</a></li>
+                <li class="hvr-underline-from-center"><a href="../about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg-grey padding30-t padding30-b clear-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="slide-left">
+                    <li><a href="profile.html"> <span class="glyphicon glyphicon-home"></span> 我的爱融界</a></li>
+                    <li>
+                        <a href="#" class="slide-click" data-target="cnav1"> <span
+                                class="glyphicon glyphicon-usd"></span>
+                            资金管理</a>
+                    </li>
+                    <ul class="child-nav" id="cnav1"  style="display: none;">
+                        <li><a href="transactionRecord.html">交易记录</a></li>
+                        <li><a href="#">重置</a></li>
+                        <li><a href="#">提现</a></li>
+                    </ul>
+                    <li>
+                        <a href="#" class="slide-click" data-target="cnav2">
+                            <span class="glyphicon glyphicon-th-large"></span> 理财管理</a>
+                    </li>
+                    <ul class="child-nav" id="cnav2" style="display: none;">
+                        <li><a href="myCredit.html">我的债权</a></li>
+                        <li><a href="assignmentOfClaims.html">债权转让</a></li>
+                        <li><a href="financialStatistics.html">理财统计</a></li>
+                    </ul>
+
+                    <li><a href="#" class="slide-click" data-target="cnav3"> <span class="glyphicon glyphicon-book"></span> 借款管理</a></li>
+                    <ul class="child-nav" id="cnav3" style="display: none;">
+                        <li><a href="myLoan.html">我的借款</a></li>
+                        <li><a href="loanApplicationQuery.html">借款申请查询</a></li>
+                        <li><a href="loanStatistics.html">借款统计</a></li>
+                    </ul>
+                    <li class="active"><a href="#" class="slide-click" data-target="cnav4">
+                        <span class="glyphicon glyphicon-user"></span> 账户管理</a></li>
+                    <ul class="child-nav" id="cnav4">
+                        <li class="active"><a href="accountBasicInformation.html">基础信息</a></li>
+                    </ul>
+                    <li><a href="#"> <span class="glyphicon glyphicon-refresh"></span> 互动管理</a></li>
+                    <li><a href="#"> <span class="glyphicon glyphicon-tag"></span> 优惠券管理</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="bordered padding20" style="background: #ffffff;">
+                    <h4>个人基础信息</h4>
+
+                    <div class="row accountBasicInfo">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-6 text-right">
+                            <a href="#" style="padding: 5px 15px;
+                                               background: #8AB46E;
+                                               border-radius: 15px;
+                                               color: #ffffff;">
+                            修改信息</a></div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    昵称
+                                </div>
+                                <div class="col-md-5">
+                                    youseittt
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    真实姓名
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="noauthenticate">去认证</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    身份证号
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="noauthenticate">去认证</span>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    手机号码
+                                </div>
+                                <div class="col-md-5">
+                                    137****3767
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="authenticate">已绑定</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    邮箱地址
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="noauthenticate">去绑定</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    性别
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    出生日期
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    最高学历
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    毕业学校
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    婚姻状况
+                                </div>
+                                <div class="col-md-5">
+                                    未婚
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    居住地址
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    公司行业
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    公司规模
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="text-danger">*</span>
+                                    职位
+                                </div>
+                                <div class="col-md-5">
+
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-desc ">
+                    <h4 class="pull-left">
+                        分享链接：
+                    </h4>
+
+                    <div class="pull-left grey-desc">
+
+                        <div class="bdsharebuttonbox">
+                            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                            <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+                            <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        </div>
+                        <script>window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "24"
+                            }, "share": {}
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                    </div>
+                    <h4 class="pull-right">
+                        客服电话：400-811-XXXX
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="../../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="../../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+<script src="../js/circle-progress.js"></script>
+<script src="../js/jquery.slicebox.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    $.material.init();
+
+</script>
+
+<!-- Sliders -->
+<script src="../js/jquery.nouislider.min.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+    });
+</script>
+
+<!-- Dropdown.js -->
+<script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
+<script>
+    $("#dropdown-menu select").dropdown();
+</script>
+
+</body>
+
+</html>

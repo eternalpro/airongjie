@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <!-- Mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link href="../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
-    <link href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/slicebox.css"/>
-    <link rel="stylesheet" href="css/slicebox.custom.css"/>
-    <link rel="stylesheet" href="css/hover.css"/>
-    <link rel="stylesheet" href="css/core.css"/>
-    <link rel="stylesheet" href="css/app.css"/>
-    <script src="js/modernizr.custom.46884.js"></script>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link href="../../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="../../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/slicebox.css"/>
+    <link rel="stylesheet" href="../css/slicebox.custom.css"/>
+    <link rel="stylesheet" href="../css/hover.css"/>
+    <link rel="stylesheet" href="../css/core.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <script src="../js/modernizr.custom.46884.js"></script>
     <style>
 
     </style>
@@ -31,9 +31,9 @@
 
                 <div class="pull-right">
                     <p class="font-color">
-                        <a href="signin.html">登录</a>
+                        <a href="../signin.html">登录</a>
                         |
-                        <a href="signup.html">注册</a>
+                        <a href="../signup.html">注册</a>
                     </p>
                 </div>
             </div>
@@ -53,10 +53,10 @@
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hvr-underline-from-center "><a href="index.html">首页</a></li>
+                <li class="hvr-underline-from-center "><a href="../index.html">首页</a></li>
                 <li class="hvr-underline-from-center"><a href="javascript:void(0)">我要理财</a></li>
                 <li class="hvr-underline-from-center"><a href="javascript:void(0)">我要借款</a></li>
-                <li class="hvr-underline-from-center"><a href="about.html">关于我们</a></li>
+                <li class="hvr-underline-from-center"><a href="../about.html">关于我们</a></li>
             </ul>
         </div>
     </div>
@@ -82,8 +82,8 @@
                             <span class="glyphicon glyphicon-th-large"></span> 理财管理</a>
                     </li>
                     <ul class="child-nav" id="cnav2">
-                        <li><a href="myCredit.html">我的债权</a></li>
-                        <li class="active"><a href="assignmentOfClaims.html">债权转让</a></li>
+                        <li class="active"><a href="myCredit.html">我的债权</a></li>
+                        <li><a href="assignmentOfClaims.html">债权转让</a></li>
                         <li><a href="financialStatistics.html">理财统计</a></li>
                     </ul>
 
@@ -93,7 +93,11 @@
                         <li><a href="loanApplicationQuery.html">借款申请查询</a></li>
                         <li><a href="loanStatistics.html">借款统计</a></li>
                     </ul>
-                    <li><a href="#"> <span class="glyphicon glyphicon-user"></span> 账户管理</a></li>
+                    <li><a href="#" class="slide-click" data-target="cnav4">
+                        <span class="glyphicon glyphicon-user"></span> 账户管理</a></li>
+                    <ul class="child-nav" id="cnav4" style="display: none;">
+                        <li><a href="accountBasicInformation.html">基础信息</a></li>
+                    </ul>
                     <li><a href="#"> <span class="glyphicon glyphicon-refresh"></span> 互动管理</a></li>
                     <li><a href="#"> <span class="glyphicon glyphicon-tag"></span> 优惠券管理</a></li>
                 </ul>
@@ -104,61 +108,35 @@
                         <div class="col-md-3 bordered-right" style="min-height: 110px;">
                             <div style="position: absolute; top: 0px;">
                                 <span class="strong">
-                                    债权转让盈亏
+                                    债权已赚金额
                                 </span>
                                 <div class="margin10-t text-warning">
                                     0.00 元
                                 </div>
-                                <small>转出中的份额 &nbsp; <strong>0</strong> 份</small>
+                                <small>利息收益 &nbsp; <strong>0.00</strong> 元</small>
                                 <br/>
-                                <small>转出中的数量 &nbsp; <strong>0</strong> 份</small>
+                                <small>债权转让盈亏 &nbsp; <strong>0.00</strong> 元</small>
                             </div>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div>成功转入资金</div>
+                                    <div>债权账户资产</div>
                                     <div>
                                         <small>0.00 元</small>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div>债权转入盈亏</div>
-                                    <div>
-                                        <small>0.00 元</small>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div>已转入债权数量</div>
-                                    <div>
-                                        <small>0 份</small>
-                                    </div>
-                                </div>
+
                             </div>
-                            <div class="row margin20-t">
-                                <div class="col-md-12">
-                                    <div class="bordered-bottom"></div>
-                                </div>
-                            </div>
-                            <div class="row margin10-t">
+                            <div class="row margin30-t">
                                 <div class="col-md-4">
-                                    <div>成功转出金额</div>
+                                    <div>回收中的债权</div>
                                     <div>
                                         <small>0.00 元</small>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div>债权转出盈亏</div>
-                                    <div>
-                                        <small>0.00 元</small>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div>已转出债权数量</div>
-                                    <div>
-                                        <small>0 份</small>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -167,30 +145,31 @@
                 <div class="margin30-t">
                     <div class="row margin20-b">
                         <div class="col-md-12">
+                            <a href="#" class="text-info pull-right" style="margin-top: 15px;"><small>回账查询</small></a>
                             <ul class="nav-tabs-custom">
-                                <li role="presentation" class="active" data-target="tab01">转让中的债权</li>
-                                <li role="presentation" data-target="tab02">可转出的债权</li>
-                                <li role="presentation" data-target="tab03">已转出的债权</li>
-                                <li role="presentation" data-target="tab04">已转入的债权</li>
+                                <li role="presentation" class="active" data-target="tab01">回收中的债权</li>
+                                <li role="presentation" data-target="tab02">已结清的债权</li>
+                                <li role="presentation" data-target="tab03">投标中的债权</li>
+                                <li role="presentation" data-target="tab04">已转出的债权</li>
                             </ul>
                             <div id="tab01" class="tabs-custom-content">
                                 <table style="width: 100%">
                                     <thead>
                                     <tr>
-                                        <td>转让ID</td>
                                         <td>债权ID</td>
-                                        <td>剩余期数</td>
+                                        <td>原始投资金额</td>
                                         <td>年利率</td>
-                                        <td>债权价值</td>
-                                        <td>转让价格</td>
-                                        <td>转让系数</td>
-                                        <td>剩余份数</td>
+                                        <td>待收本息</td>
+                                        <td>月收本息</td>
+                                        <td>期数</td>
+                                        <td>下个还款日</td>
+                                        <td>状态</td>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <td colspan="8">
-                                            <h4 class="text-center margin30-t">没有转让中的债权</h4>
+                                            <h4 class="text-center margin30-t">没有回收中的债权</h4>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -206,6 +185,7 @@
                                 <h4 class="text-center">没有记录</h4>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -251,23 +231,23 @@
         </div>
     </div>
 </div>
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Material Design for Bootstrap -->
-<script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
-<script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+<script src="../../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="../../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 
-<script src="js/circle-progress.js"></script>
-<script src="js/jquery.slicebox.js"></script>
-<script src="js/app.js"></script>
+<script src="../js/circle-progress.js"></script>
+<script src="../js/jquery.slicebox.js"></script>
+<script src="../js/app.js"></script>
 <script>
     $.material.init();
 
 </script>
 
 <!-- Sliders -->
-<script src="js/jquery.nouislider.min.js"></script>
+<script src="../js/jquery.nouislider.min.js"></script>
 <script>
     $(function () {
         $.material.init();

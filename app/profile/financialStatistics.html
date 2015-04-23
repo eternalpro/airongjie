@@ -1,19 +1,19 @@
 <!doctype html>
 <html>
 <head>
-    <title>借款管理 - 个人中心 - 爱融界</title>
+    <title>理财管理 - 个人中心 - 爱融界</title>
     <meta charset="utf-8">
     <!-- Mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
-    <link href="../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
-    <link href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/slicebox.css"/>
-    <link rel="stylesheet" href="css/slicebox.custom.css"/>
-    <link rel="stylesheet" href="css/hover.css"/>
-    <link rel="stylesheet" href="css/core.css"/>
-    <link rel="stylesheet" href="css/app.css"/>
-    <script src="js/modernizr.custom.46884.js"></script>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link href="../../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="../../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/slicebox.css"/>
+    <link rel="stylesheet" href="../css/slicebox.custom.css"/>
+    <link rel="stylesheet" href="../css/hover.css"/>
+    <link rel="stylesheet" href="../css/core.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <script src="../js/modernizr.custom.46884.js"></script>
     <style>
 
     </style>
@@ -31,9 +31,9 @@
 
                 <div class="pull-right">
                     <p class="font-color">
-                        <a href="signin.html">登录</a>
+                        <a href="../signin.html">登录</a>
                         |
-                        <a href="signup.html">注册</a>
+                        <a href="../signup.html">注册</a>
                     </p>
                 </div>
             </div>
@@ -53,10 +53,10 @@
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hvr-underline-from-center "><a href="index.html">首页</a></li>
+                <li class="hvr-underline-from-center "><a href="../index.html">首页</a></li>
                 <li class="hvr-underline-from-center"><a href="javascript:void(0)">我要理财</a></li>
                 <li class="hvr-underline-from-center"><a href="javascript:void(0)">我要借款</a></li>
-                <li class="hvr-underline-from-center"><a href="about.html">关于我们</a></li>
+                <li class="hvr-underline-from-center"><a href="../about.html">关于我们</a></li>
             </ul>
         </div>
     </div>
@@ -77,36 +77,36 @@
                         <li><a href="#">重置</a></li>
                         <li><a href="#">提现</a></li>
                     </ul>
-                    <li>
+                    <li class="active">
                         <a href="#" class="slide-click" data-target="cnav2">
                             <span class="glyphicon glyphicon-th-large"></span> 理财管理</a>
                     </li>
-                    <ul class="child-nav" id="cnav2" style="display: none;">
+                    <ul class="child-nav" id="cnav2">
                         <li><a href="myCredit.html">我的债权</a></li>
                         <li><a href="assignmentOfClaims.html">债权转让</a></li>
-                        <li><a href="financialStatistics.html">理财统计</a></li>
+                        <li class="active"><a href="financialStatistics.html">理财统计</a></li>
                     </ul>
 
-                    <li class="active">
-                        <a href="#" class="slide-click" data-target="cnav3">
-                            <span class="glyphicon glyphicon-book"></span> 借款管理
-                        </a>
-                    </li>
-                    <ul class="child-nav" id="cnav3">
+                    <li><a href="#" class="slide-click" data-target="cnav3"> <span class="glyphicon glyphicon-book"></span> 借款管理</a></li>
+                    <ul class="child-nav" id="cnav3" style="display: none;">
                         <li><a href="myLoan.html">我的借款</a></li>
                         <li><a href="loanApplicationQuery.html">借款申请查询</a></li>
-                        <li class="active"><a href="loanStatistics.html">借款统计</a></li>
+                        <li><a href="loanStatistics.html">借款统计</a></li>
                     </ul>
-                    <li><a href="#"> <span class="glyphicon glyphicon-user"></span> 账户管理</a></li>
+                    <li><a href="#" class="slide-click" data-target="cnav4">
+                        <span class="glyphicon glyphicon-user"></span> 账户管理</a></li>
+                    <ul class="child-nav" id="cnav4" style="display: none;">
+                        <li><a href="accountBasicInformation.html">基础信息</a></li>
+                    </ul>
                     <li><a href="#"> <span class="glyphicon glyphicon-refresh"></span> 互动管理</a></li>
                     <li><a href="#"> <span class="glyphicon glyphicon-tag"></span> 优惠券管理</a></li>
                 </ul>
             </div>
             <div class="col-md-9">
                 <div class="bordered padding20" style="background: #ffffff">
-                    <h4>借款账户统计</h4>
+                    <h4>理财账户统计</h4>
                     <div class="alert alert-custom-2">
-                        您在爱融界总计借款 0.00 元，总计需支付 0.00 元的利息和费用
+                        您通过爱融界平台已赚取 0.00 元
                     </div>
                     <div class="row margin20-t">
                         <div class="col-md-7">
@@ -136,68 +136,31 @@
                             </table>
                         </div>
                         <div class="col-md-5">
-                            <h4 class="text-center margin50-t">您在爱融界还没有借款</h4>
+                            <div>理财账户收益金额组成</div>
+                            <canvas class="margin20-t" id="canvas"></canvas>
                         </div>
                     </div>
                     <div class="alert alert-custom-2">
-                        您在爱融界的借款待还总额为 0.00 元
+                        您通过爱融界累计投资 0.00 元
                     </div>
                     <div class="row margin20-t">
                         <div class="col-md-7">
                             <table class="table" style="background: #FFD699;">
                                 <tr>
                                     <td rowspan="4" style="vertical-align: middle">债权</td>
-                                    <td>待还本金</td>
+                                    <td>信用认证标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>待还利息</td>
+                                    <td>机构担保标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>待还逾期费用</td>
+                                    <td>实地认证标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>待还借款管理费</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>总计</td>
-                                    <td></td>
-                                    <td>0.00</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-5">
-                            <h4 class="text-center margin50-t">还没有待还金额</h4>
-                        </div>
-                    </div>
-                    <div class="alert alert-custom-2">
-                        您在爱融界的借款已还总金额为 0.00 元
-                    </div>
-                    <div class="row margin20-t">
-                        <div class="col-md-7">
-                            <table class="table" style="background: #FFD699;">
-                                <tr>
-                                    <td rowspan="5" style="vertical-align: middle">债权</td>
-                                    <td>已交本金</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>已交利息</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>已交逾期费用</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>已交提前还款违约金</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>已交借款管理费</td>
+                                    <td>智能理财标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
@@ -208,82 +171,75 @@
                             </table>
                         </div>
                         <div class="col-md-5">
-                            <h4 class="text-center margin50-t">您没有已还金额</h4>
+                            <h4 class="text-center margin50-t">您在爱融界暂无投资</h4>
                         </div>
                     </div>
                     <div class="alert alert-custom-2">
-                        最近一年您在爱融界成功借款 0.00 元
+                        您在爱融界的理财账户资产为 0.00 元
                     </div>
                     <div class="row margin20-t">
                         <div class="col-md-7">
                             <table class="table" style="background: #FFD699;">
                                 <tr>
-                                    <td>2014年第2季度</td>
+                                    <td rowspan="4" style="vertical-align: middle">债权</td>
+                                    <td>信用认证标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>2014年第3季度</td>
+                                    <td>机构担保标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>2014年第4季度</td>
+                                    <td>实地认证标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>2015年第1季度</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>2015年第2季度</td>
+                                    <td>智能理财标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
                                     <td>总计</td>
+                                    <td></td>
                                     <td>0.00</td>
                                 </tr>
                             </table>
                         </div>
                         <div class="col-md-5">
-                            <div>最近一年成功借款金额分布</div>
-                            <canvas class="margin20-t" id="canvas"></canvas>
+                            <h4 class="text-center margin50-t">您在爱融界暂无投资</h4>
                         </div>
                     </div>
-
                     <div class="alert alert-custom-2">
-                        最近6个月您在爱融界成功借款 0.00 元
+                        您在爱融界投资的债权待收益为 0.00 元
                     </div>
                     <div class="row margin20-t">
                         <div class="col-md-7">
                             <table class="table" style="background: #FFD699;">
                                 <tr>
-                                    <td>2014年第2季度</td>
+                                    <td rowspan="4" style="vertical-align: middle">债权</td>
+                                    <td>信用认证标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>2014年第3季度</td>
+                                    <td>机构担保标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>2014年第4季度</td>
+                                    <td>实地认证标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
-                                    <td>2015年第1季度</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>2015年第2季度</td>
+                                    <td>智能理财标</td>
                                     <td>0.00</td>
                                 </tr>
                                 <tr>
                                     <td>总计</td>
+                                    <td></td>
                                     <td>0.00</td>
                                 </tr>
                             </table>
                         </div>
                         <div class="col-md-5">
-                            <div>最近6个月成功借款金额分布</div>
-                            <canvas class="margin20-t" id="canvas2"></canvas>
+                            <h4 class="text-center margin50-t">您在爱融界暂无投资</h4>
                         </div>
                     </div>
                 </div>
@@ -330,23 +286,23 @@
         </div>
     </div>
 </div>
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Material Design for Bootstrap -->
-<script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
-<script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+<script src="../../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="../../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 
-<script src="js/circle-progress.js"></script>
-<script src="js/jquery.slicebox.js"></script>
-<script src="js/app.js"></script>
+<script src="../js/circle-progress.js"></script>
+<script src="../js/jquery.slicebox.js"></script>
+<script src="../js/app.js"></script>
 <script>
     $.material.init();
 
 </script>
 
 <!-- Sliders -->
-<script src="js/jquery.nouislider.min.js"></script>
+<script src="../js/jquery.nouislider.min.js"></script>
 <script>
     $(function () {
         $.material.init();
@@ -359,7 +315,7 @@
     $("#dropdown-menu select").dropdown();
 </script>
 
-<script src="js/Chart.min.js"></script>
+<script src="../js/Chart.min.js"></script>
 <script>
     var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
@@ -386,11 +342,6 @@
     window.onload = function(){
         var ctx = document.getElementById("canvas").getContext("2d");
         window.myBar = new Chart(ctx).Bar(barChartData, {
-            responsive : true
-        });
-
-        var ctx2 = document.getElementById("canvas2").getContext("2d");
-        window.myBar = new Chart(ctx2).Bar(barChartData, {
             responsive : true
         });
     }

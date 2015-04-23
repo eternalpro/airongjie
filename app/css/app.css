@@ -629,3 +629,27 @@ ul.nav-tabs-custom {
     margin-top: -11px;
     border: 1px solid #dddddd;
 }
+
+div.accountBasicInfo div.row {
+    margin: 20px 0;
+}
+div.accountBasicInfo div.col-md-3 {
+    text-align: right;
+}
+
+.authenticate {
+    background-image: url(../images/ok.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    color: #D7CFCF;
+}
+
+.noauthenticate {
+    cursor: pointer;
+    background-image: url(../images/3point.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    color: #33A9E0;
+}
