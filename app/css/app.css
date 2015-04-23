@@ -599,6 +599,16 @@ ul.nav-tabs-custom {
     padding-bottom: 11px;
 }
 
+.nav-tabs-custom > li:not(.active):hover{
+    color: #555;
+    cursor: pointer;
+    background-color: #EEEEEE;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    z-index: 9999;
+    padding-bottom: 11px;
+}
+
 .alert-custom {
     background: #FFC266;
     color: #000;
@@ -612,3 +622,10 @@ ul.nav-tabs-custom {
     margin-bottom: 0px;
 }
 
+.tabs-custom-content {
+    padding: 20px;
+    display: none;
+    background: #ffffff;
+    margin-top: -11px;
+    border: 1px solid #dddddd;
+}

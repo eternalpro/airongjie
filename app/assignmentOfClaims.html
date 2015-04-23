@@ -168,14 +168,12 @@
                     <div class="row margin20-b">
                         <div class="col-md-12">
                             <ul class="nav-tabs-custom">
-                                <li role="presentation" class="active">转让中的债权</li>
-                                <li role="presentation">可转出的债权</li>
-                                <li role="presentation">已转出的债权</li>
-                                <li role="presentation">已转入的债权</li>
+                                <li role="presentation" class="active" data-target="tab01">转让中的债权</li>
+                                <li role="presentation" data-target="tab02">可转出的债权</li>
+                                <li role="presentation" data-target="tab03">已转出的债权</li>
+                                <li role="presentation" data-target="tab04">已转入的债权</li>
                             </ul>
-                            <div style="background: #ffffff;
-                                margin-top: -11px;
-                                border: 1px solid #dddddd;" class="padding20">
+                            <div id="tab01" class="tabs-custom-content">
                                 <table style="width: 100%">
                                     <thead>
                                     <tr>
@@ -198,7 +196,15 @@
                                     </tbody>
                                 </table>
                             </div>
-
+                            <div id="tab02" class="tabs-custom-content">
+                                <h4 class="text-center">没有记录</h4>
+                            </div>
+                            <div id="tab03" class="tabs-custom-content">
+                                <h4 class="text-center">没有记录</h4>
+                            </div>
+                            <div id="tab04" class="tabs-custom-content">
+                                <h4 class="text-center">没有记录</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
