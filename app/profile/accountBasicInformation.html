@@ -111,7 +111,7 @@
                     <div class="row accountBasicInfo">
                         <div class="col-md-5"></div>
                         <div class="col-md-6 text-right">
-                            <button class="btn btn-info btn-modify">修改信息</button>
+                            <button class="btn btn-custom-inverse btn-modify">修改信息</button>
                         </div>
                         <div class="col-md-4"></div>
                         <div class="col-md-7">
@@ -334,8 +334,7 @@
 <script>
     $(function () {
         $.material.init();
-        $('button.btn-modify').on('click', function(e){
-            e.preventDefault();
+        $('button.btn-modify').on('click', function(){
             var $btn = $(this);
             if($btn.text() == '修改信息'){
                 $('input.form-control').each(function(i, o) {
@@ -351,11 +350,10 @@
                     var $this = $(o);
                     var $sib = $this.siblings('span');
                     $sib.text($this.val().trim());
-                    $sib.show()
+                    $sib.show();
                     $this.hide();
                 });
                 $btn.text('修改信息');
-
             }
         });
     });
