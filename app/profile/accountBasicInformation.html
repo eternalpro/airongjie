@@ -219,7 +219,10 @@
                                 </div>
                                 <div class="col-md-6">
                                     <span>未婚</span>
-                                    <input type="text" class="form-control hide"/>
+                                    <select class="form-control hide">
+                                        <option value="未婚">未婚</option>
+                                        <option value="已婚">已婚</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -334,19 +337,23 @@
 <script>
     $(function () {
         $.material.init();
-        $('button.btn-modify').on('click', function(){
+        $('button.btn-modify').on('click', function () {
             var $btn = $(this);
-            if($btn.text() == '修改信息'){
-                $('input.form-control').each(function(i, o) {
+            if ($btn.text() == '修改信息') {
+                $('.form-control').each(function (i, o) {
                     var $this = $(o);
                     var $sib = $this.siblings('span');
-                    $this.attr('value', $sib.text().trim());
+                    if ($this.context.localName == 'select') {
+                        $this.find('option[value=' + $sib.text().trim() + ']').get(0).selected = true;
+                    } else {
+                        $this.attr('value', $sib.text().trim());
+                    }
                     $this.removeClass('hide').show();
                     $sib.hide();
                 });
                 $btn.text('保存修改');
-            }else{
-                $('input.form-control').each(function(i, o) {
+            } else {
+                $('.form-control').each(function (i, o) {
                     var $this = $(o);
                     var $sib = $this.siblings('span');
                     $sib.text($this.val().trim());
