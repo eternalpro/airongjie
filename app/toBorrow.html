@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+<head>
+    <title>我要借款 - 爱融界</title>
+    <meta charset="utf-8">
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link href="../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slicebox.css"/>
+    <link rel="stylesheet" href="css/slicebox.custom.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
+    <link rel="stylesheet" href="css/core.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <script src="js/modernizr.custom.46884.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+<div class="top-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 margin10-t">
+                <div class="pull-left">
+                    <p class="font-color" style="font-size: 16px; font-weight: 400">
+                        <i class="call"></i> 400-810-XXXX
+                    </p>
+                </div>
+
+                <div class="pull-right">
+                    <p class="font-color">
+                        <a href="signin.html">登录</a>
+                        |
+                        <a href="signup.html">注册</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="javascript:void(0)"></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hvr-underline-from-center "><a href="index.html">首页</a></li>
+                <li class="hvr-underline-from-center"><a href="javascript:void(0)">我要理财</a></li>
+                <li class="active"><a href="toBorrow.html">我要借款</a></li>
+                <li class="hvr-underline-from-center"><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg-grey padding30-t padding30-b clear-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table bordered bg-white table-container">
+                    <tr>
+                        <td style="vertical-align: middle;padding-left: 20px; padding-right: 20px;">
+                            <div class="font-24 pull-left" style=""><strong>爱融界借款</strong></div>
+                            <div class="pull-right">
+                                <a href="#" style="margin-top: 8px; margin-left: 10px;" class="text-info pull-right">查看我的信用等级</a>
+                                <button class="pull-right btn btn-fab btn-fab-mini btn-raised btn-material-pink-500">
+                                    HR
+                                    <div class="ripple-wrapper"></div>
+                                </button>
+                                <div style="margin-top: 8px;margin-right: 10px;" class="pull-right">信用等级</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <form class="form-inline margin60-b margin10-t">
+                                <div class="form-group has-custom text-warning">
+                                    <label class="font-18"> 借款金额：</label>
+                                    <input type="text" class="form-control" id="howMuch">
+                                    <label class="font-18">元</label>
+                                </div>
+                            </form>
+                            <div id="slider" class="slider shor slider-material-orange"
+                                 style="margin: 30px auto; width: 850px; "></div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <table style="margin: 0 auto; width: 850px; " class="table">
+                                <thead>
+                                <tr>
+                                    <td width="20"></td>
+                                    <td>借款期限</td>
+                                    <td>月综合费率</td>
+                                    <td>月还款额</td>
+                                    <td>总还款额</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="radio radio-primary" style="margin-top: 0px;">
+                                            <label>
+                                                <input type="radio" name="sample2" value="option1" checked><span
+                                                    class="circle"></span><span class="check"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        3个月
+                                    </td>
+                                    <td>
+                                        0.88%
+                                    </td>
+                                    <td>
+                                        3079.20 元
+                                    </td>
+                                    <td>
+                                        9237.60 元
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio radio-primary" style="margin-top: 0px;">
+                                            <label>
+                                                <input type="radio" name="sample2" value="option1"><span
+                                                    class="circle"></span><span class="check"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        6个月
+                                    </td>
+                                    <td>
+                                        0.88%
+                                    </td>
+                                    <td>
+                                        1579.20 元
+                                    </td>
+                                    <td>
+                                        9457.20 元
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio radio-primary" style="margin-top: 0px;">
+                                            <label>
+                                                <input type="radio" name="sample2" value="option1"><span
+                                                    class="circle"></span><span class="check"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        12个月
+                                    </td>
+                                    <td>
+                                        0.88%
+                                    </td>
+                                    <td>
+                                        829.20 元
+                                    </td>
+                                    <td>
+                                        9950.40 元
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio radio-primary" style="margin-top: 0px;">
+                                            <label>
+                                                <input type="radio" name="sample2" value="option1"><span
+                                                    class="circle"></span><span class="check"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        24个月
+                                    </td>
+                                    <td>
+                                        0.88%
+                                    </td>
+                                    <td>
+                                        454.20 元
+                                    </td>
+                                    <td>
+                                        10900.80 元
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <button class="btn btn-custom-inverse margin30-t margin20-b">申请贷款</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table bordered bg-white table-container">
+                    <tr>
+                        <td style="vertical-align: middle;padding-left: 20px; padding-right: 20px;">
+                            <div class="font-24 pull-left" style=""><strong>借款费率</strong></div>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-center">
+                            <table style="margin: 0 auto; width: 850px; " class="table">
+                                <thead>
+                                <tr>
+                                    <td width="80">借款等级</td>
+                                    <td>信用分数区间</td>
+                                    <td>月综合费率</td>
+                                    <td>期初服务费率</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-blue-500">
+                                            AA
+                                            <div class="ripple-wrapper"></div>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        210+
+                                    </td>
+                                    <td>
+                                        0.55%
+                                    </td>
+                                    <td>
+                                        0%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                            A
+                                            <div class="ripple-wrapper"></div>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        180-209
+                                    </td>
+                                    <td>
+                                        0.60%
+                                    </td>
+                                    <td>
+                                        1%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-fab btn-fab-mini btn-raised btn-material-yellow-600"
+                                                style="color: #ffffff">
+                                            B
+                                            <div class="ripple-wrapper"></div>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        150-179
+                                    </td>
+                                    <td>
+                                        0.65%
+                                    </td>
+                                    <td>
+                                        2%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-fab btn-fab-mini  btn-raised btn-material-orange-400"
+                                                style="color: #ffffff">
+                                            C
+                                            <div class="ripple-wrapper"></div>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        130-149
+                                    </td>
+                                    <td>
+                                        0.70%
+                                    </td>
+                                    <td>
+                                        2.5%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-fab btn-fab-mini btn-raised btn-material-deep-orange-500">
+                                            D
+                                            <div class="ripple-wrapper"></div>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        110-129
+                                    </td>
+                                    <td>
+                                        0.75%
+                                    </td>
+                                    <td>
+                                        3%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-fab btn-fab-mini btn-raised btn-material-red-600">
+                                            E
+                                            <div class="ripple-wrapper"></div>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        100-109
+                                    </td>
+                                    <td>
+                                        0.80%
+                                    </td>
+                                    <td>
+                                        4%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-fab btn-fab-mini btn-raised btn-material-pink-500">
+                                            HR
+                                            <div class="ripple-wrapper"></div>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        0-99
+                                    </td>
+                                    <td>
+                                        0.88%
+                                    </td>
+                                    <td>
+                                        5%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="border-bottom: 0px solid #ddd;">
+                                        <p class="pull-left margin30-t margin20-b">注：还款有加分，升级有优惠！ <a href="#"
+                                                                                                     class="text-info">查看详情</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table bordered bg-white table-container">
+                    <tr>
+                        <td style="vertical-align: middle;padding-left: 20px; padding-right: 20px;">
+                            <div class="font-24 pull-left" style="">
+                                <stroung>借款优势</stroung>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <table style="margin: 0 auto; width: 850px; " class="table">
+                                <tr>
+                                    <td style="border-bottom: 0px solid #ddd; text-align: center">
+                                        <h3>门槛低</h3>
+
+                                        <p>月入2000元即可申请</p>
+                                    </td>
+                                    <td style="border-bottom: 0px solid #ddd; text-align: center">
+                                        <h3>额度大</h3>
+
+                                        <p>最高借款额度达50万元</p>
+                                    </td>
+                                    <td style="border-bottom: 0px solid #ddd; text-align: center">
+                                        <h3>放款快</h3>
+
+                                        <p>3个工作日内可审核完成</p>
+                                    </td>
+                                    <td style="border-bottom: 0px solid #ddd; text-align: center">
+                                        <h3>费率低</h3>
+
+                                        <p>月综合费率低至0.55%</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-desc ">
+                    <h4 class="pull-left">
+                        分享链接：
+                    </h4>
+
+                    <div class="pull-left grey-desc">
+
+                        <div class="bdsharebuttonbox">
+                            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                            <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+                            <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        </div>
+                        <script>window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "24"
+                            }, "share": {}
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                    </div>
+                    <h4 class="pull-right">
+                        客服电话：400-811-XXXX
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+<script src="js/circle-progress.js"></script>
+<script src="js/jquery.slicebox.js"></script>
+<script src="js/app.js"></script>
+<script>
+    $.material.init();
+</script>
+
+<!-- Sliders -->
+<script src="js/jquery.nouislider.min.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+
+        $("#slider").noUiSlider({
+            start: 140000,
+            connect: 'lower',
+            range: {
+                min: 3000,
+                max: 500000
+            }
+        });
+
+
+        $('#slider').on('slide', function () {
+            $('#howMuch').val(Number($('#slider').val()).toFixed());
+        });
+        $('#howMuch').val(Number($('#slider').val()).toFixed());
+    });
+</script>
+
+<!-- Dropdown.js -->
+<script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
+<script>
+    $("#dropdown-menu select").dropdown();
+</script>
+
+</body>
+
+</html>

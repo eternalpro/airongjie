@@ -20,7 +20,12 @@
 .padding20 {
     padding: 20px;
 }
-
+.padding20-r {
+    padding-right: 20px;
+}
+.padding20-l {
+    padding-left: 20px;
+}
 .padding20-t {
     padding-top: 20px;
 }
@@ -38,4 +43,15 @@
 
 .margin20-r {
     margin-right: 20px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+.font-24 {
+    font-size: 24px;
+}
+
+.margin60-b {
+    margin-bottom: 60px;
 }

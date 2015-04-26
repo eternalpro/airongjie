@@ -128,6 +128,9 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
     background: #666666;
 }
 
+.font-white {
+    color: #ffffff;
+}
 .font-color {
     color: #FF9900;
 }
@@ -654,3 +657,4 @@ div.accountBasicInfo div.col-md-3 {
     padding-left: 18px;
     color: #33A9E0;
 }
+
