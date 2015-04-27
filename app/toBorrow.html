@@ -86,8 +86,22 @@
                                     <label class="font-18">元</label>
                                 </div>
                             </form>
-                            <div id="slider" class="slider shor slider-material-orange"
-                                 style="margin: 30px auto; width: 850px; "></div>
+
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">
+                                    <button id="s-jian" class="pull-left btn btn-fab btn-fab-mini btn-raised btn-material-orange-600" style="margin-right: 5px;">
+                                        -
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                    <div id="slider" style="width: 850px;" class="pull-left slider shor slider-material-orange"></div>
+                                    <button id="s-jia" class="pull-left btn btn-fab btn-fab-mini btn-raised btn-material-orange-600" style="margin-left: 5px;">
+                                        +
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
 
                         </td>
                     </tr>
@@ -477,10 +491,28 @@
         });
 
 
-        $('#slider').on('slide', function () {
-            $('#howMuch').val(Number($('#slider').val()).toFixed());
+        $('#s-jian').on('click', function(){
+            var val = $('#slider').val();
+            if(val >= 4000){
+                $('#slider').val(Number(val) - 1000);
+                setHowMuch();
+            }
         });
-        $('#howMuch').val(Number($('#slider').val()).toFixed());
+
+        $('#s-jia').on('click', function(){
+            var val = $('#slider').val();
+            if(val <= 499000){
+                $('#slider').val(Number(val) + 1000);
+                setHowMuch();
+            }
+        });
+        $('#slider').on('slide', function () {
+            setHowMuch();
+        });
+        var setHowMuch = function(){
+            $('#howMuch').val(Number($('#slider').val()).toFixed());
+        };
+        setHowMuch();
     });
 </script>
 
