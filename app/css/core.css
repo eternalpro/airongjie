@@ -59,3 +59,19 @@
 .margin10-r {
     margin-left: 10px;
 }
+
+.padding30 {
+    padding: 30px;
+}
+
+.margin20-l {
+    margin-left: 20px;
+}
+
+.padding30-r {
+    padding-right: 30px;
+}
+
+.padding30-l {
+    padding-left: 30px;
+}

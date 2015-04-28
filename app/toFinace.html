@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+<head>
+    <title>我要理财 - 爱融界</title>
+    <meta charset="utf-8">
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link href="../bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slicebox.css"/>
+    <link rel="stylesheet" href="css/slicebox.custom.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
+    <link rel="stylesheet" href="css/core.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <script src="js/modernizr.custom.46884.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+<div class="top-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 margin10-t">
+                <div class="pull-left">
+                    <p class="font-color" style="font-size: 16px; font-weight: 400">
+                        <i class="call"></i> 400-810-XXXX
+                    </p>
+                </div>
+
+                <div class="pull-right">
+                    <p class="font-color">
+                        <a href="signin.html">登录</a>
+                        |
+                        <a href="signup.html">注册</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="javascript:void(0)"></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hvr-underline-from-center "><a href="index.html">首页</a></li>
+                <li class="active"><a href="toFinace.html">我要理财</a></li>
+                <li class="hvr-underline-from-center"><a href="toBorrow.html">我要借款</a></li>
+                <li class="hvr-underline-from-center"><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bg-grey padding30-t padding30-b clear-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="bordered padding20" style="min-height: 300px;">
+                        <div style="width: 210px;">
+                            <h3 class="pull-left">筛选投资项目</h3>
+
+                            <div class="checkbox pull-right" style="margin-top: 22px;">
+                                <label>
+                                    <input type="checkbox">
+                                    多选
+                                </label>
+                            </div>
+                        </div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100">标的类型</td>
+                                <td>
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="150">
+                                                <button class="btn btn-custom btn-xs" style="padding: 4px 20px;">不限
+                                                </button>
+                                            </td>
+                                            <td>
+                                                信用认证标
+                                            </td>
+                                            <td>
+                                                实地认证标
+                                            </td>
+                                            <td>
+                                                机构担保标
+                                            </td>
+                                            <td>
+                                                智能理财标
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100">借款期限</td>
+                                <td>
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="150">
+                                                <button class="btn btn-custom btn-xs" style="padding: 4px 20px;">不限
+                                                </button>
+                                            </td>
+                                            <td>
+                                                6个月及以下
+                                            </td>
+                                            <td>
+                                                7 - 12 个月
+                                            </td>
+                                            <td>
+                                                13 - 24 个月
+                                            </td>
+                                            <td>
+                                                25 个月及以上
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100">认证登记</td>
+                                <td>
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="150">
+                                                <button class="btn btn-custom btn-xs" style="padding: 4px 20px;">不限
+                                                </button>
+                                            </td>
+                                            <td>
+                                                AA
+                                            </td>
+                                            <td>
+                                                A
+                                            </td>
+                                            <td>
+                                                B
+                                            </td>
+                                            <td>
+                                                C
+                                            </td>
+                                            <td>
+                                                D
+                                            </td>
+                                            <td>
+                                                E
+                                            </td>
+                                            <td>
+                                                HR
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="bordered padding20" style="min-height: 300px;">
+                        <h3 class="pull-left">投资列表 <button class="btn btn-custom-inverse btn-xs">理财计算器</button></h3>
+                        <div class="margin20-r">
+                            <div class="bordered-left pull-right  padding30-r padding30-l" style="height: 80px;">
+                                <h5>为用户累计赚取</h5>
+                                <div><span class="font-24">56624.98  </span> 万元</div>
+                            </div>
+                            <div class="bordered-left pull-right  padding30-r padding30-l" style="height: 80px;">
+                                <h5>累计成交总笔数</h5>
+                                <div><span class="font-24">136418  </span> 笔</div>
+                            </div>
+                            <div class="pull-right padding30-r">
+                                <h5>累计成交总金额</h5>
+                                <div><span class="font-24">78.47  </span> 亿元</div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>借款标题</th>
+                                <th width="130">信用等级</th>
+                                <th width="130">年利率</th>
+                                <th width="150">金额</th>
+                                <th width="130">期限</th>
+                                <th width="120">进度</th>
+                                <th width="130"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">资金周转</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    224,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">日常生活消费</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    174,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">信</span>
+                                    <span class="font-18">资金周转</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    132,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">购车</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    112,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">扩大经营</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    144,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">信</span>
+                                    <span class="font-18">装修</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    94,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">资金周转</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    124,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">资金周转</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-red-600">
+                                        E
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    154,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">生活消费</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-red-600">
+                                        E
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    164,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-warning shadow-z-1">实</span>
+                                    <span class="font-18">资金周转</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-fab btn-fab-mini btn-raised btn-material-light-green-600">
+                                        A
+                                        <div class="ripple-wrapper"></div>
+                                    </button>
+                                </td>
+                                <td>
+                                    12.00%
+                                </td>
+                                <td>
+                                    164,500元
+                                </td>
+                                <td>
+                                    36个月
+                                </td>
+                                <td>
+                                    <div class="circle">
+                                        <strong></strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn btn-custom-inverse btn-sm">投标</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="7">
+                                    <ul class="pagination pagination-sm pull-right">
+                                        <li class="disabled"><a href="javascript:void(0)">«</a></li>
+                                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                                        <li><a href="javascript:void(0)">2</a></li>
+                                        <li><a href="javascript:void(0)">3</a></li>
+                                        <li><a href="javascript:void(0)">4</a></li>
+                                        <li><a href="javascript:void(0)">5</a></li>
+                                        <li><a href="javascript:void(0)">»</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-desc ">
+                    <h4 class="pull-left">
+                        分享链接：
+                    </h4>
+
+                    <div class="pull-left grey-desc">
+
+                        <div class="bdsharebuttonbox">
+                            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                            <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+                            <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        </div>
+                        <script>window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "24"
+                            }, "share": {}
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                    </div>
+                    <h4 class="pull-right">
+                        客服电话：400-811-XXXX
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+<script src="js/circle-progress.js"></script>
+<script src="js/jquery.slicebox.js"></script>
+<script src="js/app.js"></script>
+<script>
+    $.material.init();
+</script>
+
+<!-- Sliders -->
+<script src="js/jquery.nouislider.min.js"></script>
+<script>
+    $(function () {
+        $.material.init();
+        cp($('.circle'), 0.15, 35, 15);
+    });
+</script>
+
+<!-- Dropdown.js -->
+<script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
+<script>
+    $("#dropdown-menu select").dropdown();
+</script>
+
+</body>
+
+</html>
