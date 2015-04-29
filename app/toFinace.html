@@ -70,7 +70,7 @@
 
                             <div class="checkbox pull-right" style="margin-top: 22px;">
                                 <label>
-                                    <input type="checkbox">
+                                    <input type="checkbox" id="checkAll">
                                     多选
                                 </label>
                             </div>
@@ -83,20 +83,21 @@
                                     <table width="100%">
                                         <tr>
                                             <td width="150">
-                                                <button class="btn btn-custom btn-xs" style="padding: 4px 20px;">不限
+                                                <button class="btn btn-custom btn-xs " id="type-unlimit" style="padding: 4px 20px;">
+                                                    不限
                                                 </button>
                                             </td>
                                             <td>
-                                                信用认证标
+                                                <button class="btn  btn-xs btn-type">信用认证标</button>
                                             </td>
                                             <td>
-                                                实地认证标
+                                                <button class="btn  btn-xs btn-type">实地认证标</button>
                                             </td>
                                             <td>
-                                                机构担保标
+                                                <button class="btn  btn-xs btn-type">机构担保标</button>
                                             </td>
                                             <td>
-                                                智能理财标
+                                                <button class="btn  btn-xs btn-type">智能理财标</button>
                                             </td>
                                         </tr>
                                     </table>
@@ -108,20 +109,21 @@
                                     <table width="100%">
                                         <tr>
                                             <td width="150">
-                                                <button class="btn btn-custom btn-xs" style="padding: 4px 20px;">不限
+                                                <button class="btn btn-custom btn-xs" id="borrow-limit" style="padding: 4px 20px;">
+                                                    不限
                                                 </button>
                                             </td>
                                             <td>
-                                                6个月及以下
+                                                <button class="btn  btn-xs btn-borrow">6个月及以下</button>
                                             </td>
                                             <td>
-                                                7 - 12 个月
+                                                <button class="btn  btn-xs btn-borrow">7 - 12 个月</button>
                                             </td>
                                             <td>
-                                                13 - 24 个月
+                                                <button class="btn  btn-xs btn-borrow">13 - 24 个月</button>
                                             </td>
                                             <td>
-                                                25 个月及以上
+                                                <button class="btn  btn-xs btn-borrow">25 个月及以上</button>
                                             </td>
                                         </tr>
                                     </table>
@@ -133,29 +135,29 @@
                                     <table width="100%">
                                         <tr>
                                             <td width="150">
-                                                <button class="btn btn-custom btn-xs" style="padding: 4px 20px;">不限
+                                                <button class="btn btn-custom btn-xs" id="Authentication" style="padding: 4px 20px;">不限
                                                 </button>
                                             </td>
                                             <td>
-                                                AA
+                                                <button class="btn  btn-xs btn-authentication">AA</button>
                                             </td>
                                             <td>
-                                                A
+                                                <button class="btn  btn-xs btn-authentication">A</button>
                                             </td>
                                             <td>
-                                                B
+                                                <button class="btn  btn-xs btn-authentication">B</button>
                                             </td>
                                             <td>
-                                                C
+                                                <button class="btn  btn-xs btn-authentication">C</button>
                                             </td>
                                             <td>
-                                                D
+                                                <button class="btn  btn-xs btn-authentication">D</button>
                                             </td>
                                             <td>
-                                                E
+                                                <button class="btn  btn-xs btn-authentication">E</button>
                                             </td>
                                             <td>
-                                                HR
+                                                <button class="btn  btn-xs btn-authentication">HR</button>
                                             </td>
                                         </tr>
                                     </table>
@@ -573,6 +575,54 @@
     $(function () {
         $.material.init();
         cp($('.circle'), 0.15, 35, 15);
+
+        var $checkBox = $('#checkAll');
+
+        $('#type-unlimit').on('click', function(){
+            var $this = $(this);
+            $('button.btn-type').removeClass('btn-custom');
+            $this.addClass('btn-custom');
+        });
+
+        $('button.btn-type').on('click', function(){
+            var $this = $(this);
+            $('#type-unlimit').removeClass('btn-custom');
+            if(!$checkBox[0].checked){
+                $('button.btn-type').removeClass('btn-custom');
+            }
+            $this.addClass('btn-custom');
+        })
+
+        $('#borrow-limit').on('click', function(){
+            var $this = $(this);
+            $('button.btn-borrow').removeClass('btn-custom');
+            $this.addClass('btn-custom');
+        });
+
+        $('button.btn-borrow').on('click', function(){
+            var $this = $(this);
+            $('#borrow-limit').removeClass('btn-custom');
+            if(!$checkBox[0].checked){
+                $('button.btn-borrow').removeClass('btn-custom');
+            }
+            $this.addClass('btn-custom');
+        });
+
+        $('#Authentication').on('click', function(){
+            var $this = $(this);
+            $('button.btn-authentication').removeClass('btn-custom');
+            $this.addClass('btn-custom');
+        });
+
+        $('button.btn-authentication').on('click', function(){
+            var $this = $(this);
+            $('#Authentication').removeClass('btn-custom');
+            if(!$checkBox[0].checked){
+                $('button.btn-authentication').removeClass('btn-custom');
+            }
+            $this.addClass('btn-custom');
+        });
+
     });
 </script>
 
