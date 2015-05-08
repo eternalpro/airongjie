@@ -155,7 +155,7 @@ a, a:hover {
 }
 
 a:visited {
-    color: #555;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -460,8 +460,11 @@ ul.child-nav li.active > a {
     margin-top: -20px;
 }
 
-.a-main:hover {
+a.a-main:hover {
     color: #666666;
+}
+a.a-main:visited {
+    color: #FF9900;
 }
 
 ul.signup-step {
