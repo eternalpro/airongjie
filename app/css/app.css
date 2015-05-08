@@ -2,10 +2,12 @@
 html, body {
     height: 100%;
     margin: 0;
-    color: #666666;
-    font-size: 14px;
+    color: #555;
+    font-size: 16px;
     background-color: #FFFFFF;
-    font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB";
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
 }
 
 h1, h2, h3, h4, h5 {
@@ -52,7 +54,7 @@ ul.nav > li.active {
 /** 圆形进度 **/
 
 .circle {
-    width: 40px;
+    width: 45px;
     display: inline-block;
     position: relative;
     text-align: center;
@@ -64,14 +66,14 @@ ul.nav > li.active {
 }
 
 .circle strong {
-    font-weight: lighter;
+    font-weight: normal;
     position: absolute;
     top: 5px;
     left: 0;
     width: 100%;
     text-align: center;
-    line-height: 30px;
-    font-size: 10px;
+    line-height: 38px;
+    font-size: 14px;
 }
 
 .circle span {
@@ -109,9 +111,20 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
     font-size: 13px;
 }
 
+.btn-alpha {
+    background: #ffffff;
+}
+
+.btn-alpha:hover {
+    background: #FF9900;
+    color: #ffffff;
+}
+
 .footer {
+    position: absolute;
+    width: 100%;
     background: #666666;
-    height: 60px;
+    height: 75px;
 }
 
 .footer h4 {
@@ -194,15 +207,13 @@ td a:hover {
 }
 
 .bg-panel-title {
-    height: 50px;
+    height: 40px;
     background-size: 40px 40px;
     background-repeat: no-repeat;
     padding-left: 60px;
     padding-top: 5px;
     font-size: 18px;
     width: 200px;
-
-    border-bottom: 3px solid #FF9900;
 }
 
 .panel-desc {
@@ -210,18 +221,24 @@ td a:hover {
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-    o-transition: all 0.6s ease-in-out;
-    -ms-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
-    filter-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    filter-transition: all 0.2s ease-in-out;
 }
 
 .grey-desc {
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
+}
+
+.grey-desc:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
 }
 
 .panel-desc:hover {
@@ -248,6 +265,12 @@ td a:hover {
     padding: .4em .7em .4em;
     font-size: 14px;
     font-weight: normal;
+    border-radius: 4px;
+}
+
+.lable-radius-big {
+    border-radius: 20px;
+    padding: .4em 1.2em .4em;
 }
 
 .label-warning {

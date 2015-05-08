@@ -63,11 +63,11 @@ $('ul.nav-tabs-custom>li').on('click', function(){// tabs±Í«©«–ªª
     }
 });
 
-var cp = function (selector, value, size, p) {
+var cp = function (selector, value, size, p, gradient) {
     selector.circleProgress({
         value: value,
         size: size,
-        fill: {gradient: ['#4B86DB', '#4B86DB']}
+        fill: gradient? gradient : {gradient: ['#4B86DB', '#4B86DB']}
     }).on('circle-animation-progress', function (event, progress) {
         $(this).find('strong').html(parseInt(p * progress) + '<i>%</i>');
     });
