@@ -245,10 +245,10 @@
                             <td>50,000 元</td>
                             <td>24个月</td>
                             <td>
-                                 <div id="circle5" class="circle">
-                                     <strong></strong>
-                                 </div>
-                             </td>
+                                <div id="circle5" class="circle">
+                                    <strong></strong>
+                                </div>
+                            </td>
                             <td>
                                 <span class="label label-default shadow-z-1 lable-radius-big">已满标</span>
                             </td>
@@ -258,7 +258,8 @@
                 </div>
                 <div class="panle-footer text-center">
                     <button class="btn-more btn-alpha">
-                        &nbsp;&nbsp;<span class="glyphicon glyphicon-backward" style="transform: rotate(-90deg);"></span>&nbsp;更多债权列表&nbsp;
+                        &nbsp;&nbsp;<span class="glyphicon glyphicon-backward"
+                                          style="transform: rotate(-90deg);"></span>&nbsp;更多债权列表&nbsp;
 
                     </button>
                 </div>
@@ -307,6 +308,7 @@
                     <h4 class="pull-left">
                         分享链接：
                     </h4>
+
                     <div class="pull-left">
 
                         <div class="bdsharebuttonbox">
@@ -316,7 +318,18 @@
                             <a href="#" class="bds_bdhome grey-desc" data-cmd="bdhome" title="分享到百度新首页"></a>
                             <a href="#" class="bds_renren grey-desc" data-cmd="renren" title="分享到人人网"></a>
                         </div>
-                        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                        <script>window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "24"
+                            }, "share": {}
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
                     </div>
                     <h4 class="pull-right">
                         客服电话：400-811-XXXX
@@ -349,11 +362,11 @@
 
         $(".rslides").responsiveSlides();
 
-         cp($('#circle1'), 0.35, 45, 45, {gradient: ['#59b75c', '#59b75c']});
-         cp($('#circle2'), 0.55, 45, 45, {gradient: ['#349ff4', '#349ff4']});
-         cp($('#circle3'), 0.75, 45, 45, {gradient: ['#ffc107', '#ffc107']});
-         cp($('#circle4'), 0.65, 45, 45, {gradient: ['#f44336', '#f44336']});
-         cp($('#circle5'), 0.15, 45, 45, {gradient: ['#795548', '#795548']});
+        cp($('#circle1'), 0.35, 45, 45, {gradient: ['#59b75c', '#59b75c']});
+        cp($('#circle2'), 0.55, 45, 45, {gradient: ['#349ff4', '#349ff4']});
+        cp($('#circle3'), 0.75, 45, 45, {gradient: ['#ffc107', '#ffc107']});
+        cp($('#circle4'), 0.65, 45, 45, {gradient: ['#f44336', '#f44336']});
+        cp($('#circle5'), 0.15, 45, 45, {gradient: ['#795548', '#795548']});
 
         setInterval(function () {
             $('a#next').click();
