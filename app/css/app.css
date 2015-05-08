@@ -7,7 +7,7 @@ html, body {
     background-color: #FFFFFF;
     line-height: 1.5;
     font-weight: normal;
-    font-family: '微软雅黑',YaHei,tahoma,arial,"Hiragino Sans GB";
+    font-family: '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB";
 }
 
 h1, h2, h3, h4, h5 {
@@ -144,6 +144,7 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
 .font-white {
     color: #ffffff;
 }
+
 .font-color {
     color: #FF9900;
 }
@@ -169,7 +170,6 @@ td a:hover {
 
 .logo {
     background: url("../images/logo.png") no-repeat;
-    background-size: 180px 80px;
 }
 
 .navbar {
@@ -180,12 +180,17 @@ td a:hover {
     box-shadow: 0px 3px 4px 1px #c6c6c6;
 }
 
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 5px;
+}
+
 .navbar.navbar, .navbar-default.navbar {
     background-color: #ffffff;
     color: #000000;
 }
 
 .navbar .navbar-brand {
+    margin-top: 10px;
     position: relative;
     height: 100px;
     width: 300px;
@@ -341,7 +346,7 @@ i.call {
     background: url("../images/tel.png") no-repeat;
     background-size: 16px 16px;
     float: left;
-    margin-top: 0px;
+    margin-top: 3px;
     margin-right: 5px;
     height: 16px;
     width: 16px;
@@ -419,8 +424,7 @@ ul.slide-left li.active > a {
 
 }
 
-
-ul.child-nav > li{
+ul.child-nav > li {
     margin: 5px 0px;
     padding: 8px 0px;
     font-size: 14px;
@@ -561,7 +565,7 @@ form.form-custom > div.form-group {
     color: #FF9900;
 }
 
-.btn-custom-inverse:hover:not(.btn-link):not(.btn-flat){
+.btn-custom-inverse:hover:not(.btn-link):not(.btn-flat) {
     background-color: rgba(249, 179, 77, 1);
 }
 
@@ -604,6 +608,7 @@ ul.nav-tabs-custom {
     padding: 0px;
     list-style: none;
 }
+
 .nav-tabs-custom > li {
     position: relative;
     display: block;
@@ -616,7 +621,8 @@ ul.nav-tabs-custom {
     border-radius: 4px 4px 0 0;
     cursor: pointer;
 }
-.nav-tabs-custom > li.active{
+
+.nav-tabs-custom > li.active {
     color: #555;
     cursor: default;
     background-color: #fff;
@@ -626,7 +632,7 @@ ul.nav-tabs-custom {
     padding-bottom: 11px;
 }
 
-.nav-tabs-custom > li:not(.active):hover{
+.nav-tabs-custom > li:not(.active):hover {
     color: #555;
     cursor: pointer;
     background-color: #EEEEEE;
@@ -645,6 +651,7 @@ ul.nav-tabs-custom {
     background: #FFB74C;
     color: #ffffff;
 }
+
 .alert {
     margin-bottom: 0px;
 }
@@ -660,6 +667,7 @@ ul.nav-tabs-custom {
 div.accountBasicInfo div.row {
     margin: 20px 0;
 }
+
 div.accountBasicInfo div.col-md-3 {
     text-align: right;
 }
@@ -691,4 +699,37 @@ div.accountBasicInfo div.col-md-3 {
     cursor: default;
     background-color: #FF9900;
     border-color: #FF9900;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: -10px 0 20px;
+    border-bottom: 3px solid #666666;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    float: left;
+    height: 450px;
+    width: 100%;
+    border: 0;
 }

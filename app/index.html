@@ -52,7 +52,7 @@
     </div>
 </div>
 
-<ul id="sb-slider" class="sb-slider border-bottom">
+<ul id="sb-slider" class="rslides">
     <li>
         <a href="#" target="_blank"><img src="images/slider.png" alt="image1"/></a>
     </li>
@@ -335,7 +335,7 @@
 <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 
 <script src="js/circle-progress.js"></script>
-<script src="js/jquery.slicebox.js"></script>
+<script src="js/responsiveslides.min.js"></script>
 <script src="js/app.js"></script>
 <script>
     $.material.init();
@@ -347,7 +347,7 @@
     $(function () {
         $.material.init();
 
-
+        $(".rslides").responsiveSlides();
 
          cp($('#circle1'), 0.35, 45, 45, {gradient: ['#59b75c', '#59b75c']});
          cp($('#circle2'), 0.55, 45, 45, {gradient: ['#349ff4', '#349ff4']});
