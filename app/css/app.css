@@ -200,7 +200,7 @@ td a:hover {
 .navbar .navbar-brand {
     margin-top: 10px;
     position: relative;
-    height: 100px;
+    height: 80px;
     width: 300px;
     line-height: 30px;
     color: inherit;
@@ -218,6 +218,7 @@ td a:hover {
 .navbar .navbar-nav > li > a:hover {
     color: #FF9900;
 }
+
 
 .bg-panel-title {
     height: 40px;
@@ -714,7 +715,7 @@ div.accountBasicInfo div.col-md-3 {
     overflow: hidden;
     width: 100%;
     padding: 0;
-    margin: -10px 0 20px;
+    margin: 3px 0 20px;
     border-bottom: 3px solid #666666;
 }
 
