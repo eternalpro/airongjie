@@ -61,23 +61,13 @@
     </li>
 </ul>
 
-<div class="container hide">
-    <div class="row">
-        <div class="col-md-12">
-            <div id="nav-arrows" class="nav-arrows">
-                <a id="next" href="#">Next</a>
-                <a id="previous" href="#">Previous</a>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="container margin40-b">
     <div class="row">
         <div class="col-md-4  ">
-            <div class="panel">
+            <div class="panel panel-MS">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        <div class="bg-panel-title bg-tz">
+                        <div class="bg-panel-title bg-tz font-black" data-bg="bg-tz" data-bg-f="bg-tz-f">
                             投资/理财
                         </div>
                     </div>
@@ -88,10 +78,10 @@
             </div>
         </div>
         <div class="col-md-4 ">
-            <div class="panel">
+            <div class="panel panel-MS">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        <div class="bg-panel-title bg-rz">
+                        <div class="bg-panel-title bg-rz font-black" data-bg="bg-rz" data-bg-f="bg-rz-f">
                             融资/借贷
                         </div>
                     </div>
@@ -102,10 +92,10 @@
             </div>
         </div>
         <div class="col-md-4 ">
-            <div class="panel">
+            <div class="panel panel-MS">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        <div class="bg-panel-title bg-bx">
+                        <div class="bg-panel-title bg-bx font-black" data-bg="bg-bx" data-bg-f="bg-bx-f">
                             财富保险计划
                         </div>
                     </div>
@@ -360,7 +350,24 @@
     $(function () {
         $.material.init();
 
-        $(".rslides").responsiveSlides();
+        $(".rslides").responsiveSlides({
+            auto: true,             // Boolean: Animate automatically, true or false
+            speed: 500,            // Integer: Speed of the transition, in milliseconds
+            timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+            pager: true,           // Boolean: Show pager, true or false
+            nav: false,             // Boolean: Show navigation, true or false
+            random: false,          // Boolean: Randomize the order of the slides, true or false
+            pause: false,           // Boolean: Pause on hover, true or false
+            pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+            prevText: "Previous",   // String: Text for the "previous" button
+            nextText: "Next",       // String: Text for the "next" button
+            maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+            navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+            manualControls: "",     // Selector: Declare custom pager navigation
+            namespace: "rslides",   // String: Change the default namespace used
+            before: function(){},   // Function: Before callback
+            after: function(){}     // Function: After callback
+        });
 
         cp($('#circle1'), 0.35, 45, 45, {gradient: ['#59b75c', '#59b75c']});
         cp($('#circle2'), 0.55, 45, 45, {gradient: ['#349ff4', '#349ff4']});
@@ -371,6 +378,22 @@
         setInterval(function () {
             $('a#next').click();
         }, 6000);
+
+        $('.panel-MS').on('mouseenter', function () {
+            var $this = $(this);
+            var $title = $this.find('.bg-panel-title');
+            var $dataBg = $title.data('bg');
+            var $dataBgF = $title.data('bg-f');
+            $title.removeClass($dataBg).removeClass('font-black').addClass($dataBgF).addClass('font-color');
+        });
+
+        $('.panel-MS').on('mouseleave', function () {
+            var $this = $(this);
+            var $title = $this.find('.bg-panel-title');
+            var $dataBg = $title.data('bg');
+            var $dataBgF = $title.data('bg-f');
+            $title.removeClass($dataBgF).removeClass('font-color').addClass($dataBg).addClass('font-black');
+        });
     });
 </script>
 
