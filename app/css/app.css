@@ -124,7 +124,7 @@ table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .ta
     position: absolute;
     width: 100%;
     background: #666666;
-    height: 75px;
+    height: 80px;
 }
 
 .footer h4 {
@@ -292,13 +292,13 @@ td a:hover {
 }
 
 .label {
-    padding: .4em .7em .4em;
+    padding: 4px 7px;
     font-size: 14px;
     font-weight: normal;
     border-radius: 4px;
 }
 
-.lable-radius-big {
+.label-radius-big {
     border-radius: 20px;
     padding: .4em 1.2em .4em;
 }
@@ -306,7 +306,6 @@ td a:hover {
 .label-warning {
     background: #FF9900;
 }
-
 
 .panel-product {
     margin-top: -3px;
@@ -647,7 +646,7 @@ ul.nav-tabs-custom {
     margin-right: 2px;
     line-height: 1.42857143;
     border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
+    border-radius: 2px 2px 0 0;
     cursor: pointer;
 }
 
@@ -655,8 +654,9 @@ ul.nav-tabs-custom {
     color: #555;
     cursor: default;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 2px solid dodgerblue;
     z-index: 9999;
     padding-bottom: 11px;
 }
@@ -767,7 +767,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     font-weight: normal;
 }
 
-.rslides_tabs  {
+.rslides_tabs {
     left: 50%;
     margin-left: -30px;
     position: absolute;
@@ -786,12 +786,52 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     overflow: hidden;
     text-align: center;
 }
+
 .rslides_tabs li.rslides_here {
     background: none repeat scroll 0 0 #FF9900;
     border: 1px solid #FF9900;
 }
+
 .rslides_tabs li a {
     color: #000;
     padding-left: 20px;
     text-decoration: none;
+}
+
+div.dt {
+    width: 110px;
+    text-align: justify;
+    float: left;
+    color: #888;
+    height: 12px;
+}
+
+.dt:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+}
+
+div.dd {
+    margin-left: 20px;
+    float: left;
+}
+
+table.table-padding5-tb td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table.table-center > thead > tr > th, .table-center > tbody > tr > th, .table-center > tfoot > tr > th, .table-center > thead > tr > td, .table-center > tbody > tr > td, .table-center > tfoot > tr > td {
+    padding: 15px 8px 8px 120px;
+}
+
+table.table-center > thead > tr > td {
+    background: #ff9900;
+    color: #ffffff;
+}
+table.table-center td {
+    border-color: #ffffff;
 }
